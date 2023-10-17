@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2023.8.28)  17 OCT 2023 02:35
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2023.8.28)  17 OCT 2023 16:55
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -402,24 +402,24 @@ Package: gensymb 2022/10/17 v1.0.2 (KJH)
 ) (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
 
 (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -455,62 +455,62 @@ Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 ))
-Package hyperref Info: Link coloring OFF on input line 11.
+Package hyperref Info: Link coloring OFF on input line 13.
  (./main.out)
 (./main.out)
 \@outlinefile=\write4
 \openout4 = `main.out'.
 
-LaTeX Info: Redefining \celsius on input line 11.
-Package gensymb Info: Faking symbols for \degree and \celsius on input line 11.
+LaTeX Info: Redefining \celsius on input line 13.
+Package gensymb Info: Faking symbols for \degree and \celsius on input line 13.
 
 
 
 Package gensymb Warning: Not defining \perthousand.
 
-LaTeX Info: Redefining \ohm on input line 11.
-Package gensymb Info: Using \Omega for \ohm on input line 11.
+LaTeX Info: Redefining \ohm on input line 13.
+Package gensymb Info: Using \Omega for \ohm on input line 13.
 
 Package gensymb Warning: Not defining \micro.
 
-<~/school/logo.png, id=52, 53.2389pt x 50.589pt>
+<~/school/logo.png, id=72, 53.2389pt x 50.589pt>
 File: ~/school/logo.png Graphic file (type png)
 <use ~/school/logo.png>
-Package pdftex.def Info: ~/school/logo.png  used on input line 17.
+Package pdftex.def Info: ~/school/logo.png  used on input line 19.
 (pdftex.def)             Requested size: 120.45044pt x 114.4641pt.
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} </home/martin/school/logo.p
 ng (PNG copy)>]
-Overfull \hbox (3.36182pt too wide) in paragraph at lines 38--40
+Overfull \hbox (3.36182pt too wide) in paragraph at lines 40--42
 \OT1/cmr/m/n/10 Prom^^Te^^Trit voltamp^^Serovou chrak-ter-is-tiku Franck-Hertzo
 vy tru-bice (tetrody) pln^^Ten^^Se
  []
 
 
-Overfull \hbox (9.88959pt too wide) in paragraph at lines 45--47
+Overfull \hbox (9.88959pt too wide) in paragraph at lines 47--49
 \OT1/cmr/m/n/10 Franck-Hertzova tru-bice pln^^Ten^^Sa rtu[]tov^^Symi parami, Fr
 anck-Hertzova tru-bice pln^^Ten^^Sa
  []
 
 [2]
-<data/hg.pdf, id=68, 462.52798pt x 346.89601pt>
+<data/hg.pdf, id=88, 462.52798pt x 346.89601pt>
 File: data/hg.pdf Graphic file (type pdf)
 <use data/hg.pdf>
-Package pdftex.def Info: data/hg.pdf  used on input line 71.
+Package pdftex.def Info: data/hg.pdf  used on input line 73.
 (pdftex.def)             Requested size: 555.03079pt x 416.27312pt.
 
-Overfull \hbox (112.25285pt too wide) in paragraph at lines 70--72
+Overfull \hbox (112.25285pt too wide) in paragraph at lines 72--74
 []|  [] 
  []
 
-<data/neon.pdf, id=69, 462.52798pt x 346.89601pt>
+<data/neon.pdf, id=89, 462.52798pt x 346.89601pt>
 File: data/neon.pdf Graphic file (type pdf)
 <use data/neon.pdf>
-Package pdftex.def Info: data/neon.pdf  used on input line 76.
+Package pdftex.def Info: data/neon.pdf  used on input line 78.
 (pdftex.def)             Requested size: 555.03079pt x 416.27312pt.
 
-Overfull \hbox (112.25285pt too wide) in paragraph at lines 75--77
+Overfull \hbox (112.25285pt too wide) in paragraph at lines 77--79
 []|  [] 
  []
 
@@ -518,39 +518,78 @@ Overfull \hbox (112.25285pt too wide) in paragraph at lines 75--77
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [3 <./data/hg.pdf>]
-./main.tex:96: Double subscript.
-l.96 $\sigma_{\Delta U}_
-                        {Hg} = 0.456$
+./main.tex:98: Double subscript.
+l.98 $\sigma_{\Delta U}_
+                        {Hg} = 0.1037$
 I treat `x_1_2' essentially like `x_1{}_2'.
 
-./main.tex:115: Double subscript.
-l.115 $\sigma_{\Delta U}_
-                         {Ne} = 6.324$
+./main.tex:117: Double subscript.
+l.117 $\sigma_{\Delta U}_
+                         {Ne} = 1.25$
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 [4 <./data/neon.pdf>] [5]
-./main.tex:133: Double subscript.
-l.133 ... \partial (h \cdot c) } \cdot \sigma_{E}_
+./main.tex:139: Double subscript.
+l.139 ... \partial (h \cdot c) } \cdot \sigma_{E}_
                                                   {Hg}  \right)^{2} }$$
 I treat `x_1_2' essentially like `x_1{}_2'.
 
-./main.tex:134: Double subscript.
-l.134 ...Hg} + c \cdot h}{h^{2} c^{2}} \sigma_{E}_
+./main.tex:140: Double subscript.
+l.140 ...Hg} + c \cdot h}{h^{2} c^{2}} \sigma_{E}_
                                                   {Hg} \right)^{2} }$$
 I treat `x_1_2' essentially like `x_1{}_2'.
 
+./main.tex:141: Double subscript.
+l.141 Kde $\sigma_{E}_
+                      {Hg}$ jsem počítal jako
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+./main.tex:142: Double subscript.
+l.142 $$\sigma_{E}_
+                   {Hg} = \sqrt{ \left( \frac{e \cdot \overline{\Delta U_{Hg...
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+./main.tex:142: Double subscript.
+l.142 ...{\Delta U_{Hg}}} \cdot \sigma_{\Delta E}_
+                                                  {Hg} \right) }$$
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+./main.tex:143: Double subscript.
+l.143 Ano, je tam rozdíl mezi $\sigma_{\Delta E}_
+                                                  {Hg}$ a $\sigma_{E}_{Hg}$
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+./main.tex:143: Double subscript.
+l.143 ...i $\sigma_{\Delta E}_{Hg}$ a $\sigma_{E}_
+                                                  {Hg}$
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+./main.tex:144: Undefined control sequence.
+l.144 $$\therefore
+                   \delta_{Hg} = 1.974 \cdot 10^{-5}$$
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 148--152
+
+ []
+
 [6] (./main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 5E1441411DB819797E69301DF76C7B28;1085.
+(rerunfilecheck)             Checksum: C14A9C8FA4C07B43843AA634CE6678BB;1949.
  ) 
 Here is how much of TeX's memory you used:
- 12204 strings out of 477985
- 204041 string characters out of 5840058
- 1863388 words of memory out of 5000000
- 32191 multiletter control sequences out of 15000+600000
+ 12214 strings out of 477985
+ 204171 string characters out of 5840058
+ 1864388 words of memory out of 5000000
+ 32196 multiletter control sequences out of 15000+600000
  516839 words of font info for 48 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 75i,7n,77p,300b,452s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,8n,77p,342b,452s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/
 texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/share/texmf-dist
 /fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/p
@@ -566,10 +605,10 @@ ype1/public/amsfonts/cm/cmss12.pfb></usr/share/texmf-dist/fonts/type1/public/am
 sfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy
 6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/sha
 re/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on main.pdf (6 pages, 357063 bytes).
+Output written on main.pdf (6 pages, 363545 bytes).
 PDF statistics:
- 215 PDF objects out of 1000 (max. 8388607)
- 166 compressed objects within 2 object streams
- 21 named destinations out of 1000 (max. 500000)
- 112 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 236 PDF objects out of 1000 (max. 8388607)
+ 187 compressed objects within 2 object streams
+ 26 named destinations out of 1000 (max. 500000)
+ 152 words of extra memory for PDF output out of 10000 (max. 10000000)
 

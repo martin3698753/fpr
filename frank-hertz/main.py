@@ -12,10 +12,14 @@ c = 299792458
 neon_min = np.array([26.4, 44, 64.1])
 hg_min = np.array([28.6, 33.4, 38.3, 43.1, 47.9, 52.7, 57.5, 62.3, 68.1, 72.7, 77.7])
 
+def par_er2(sigma):
+    print("Excit error = ", e*sigma)
+    return (e*sigma)
+
 def par_er(E, sigma):
-    in_sq_up = (c*E) + h*c
-    in_sq_dw = h**2 * c**2
-    return np.sqrt(((in_sq_up*sigma)/in_sq_dw)**2)
+    in_sq_up = ((c*E) + (h*c))*par_er2(sigma)
+    in_sq_dw = h*c
+    return np.sqrt(((in_sq_up)/in_sq_dw)**2)
 
 def err(ar):
     le = ar.shape[0]
@@ -62,6 +66,7 @@ def mes(name):
     df_min = df_min.round(3)
     df_min.to_csv("data/" + name + ".csv")
 
+    tab_min = np.delete(tab_min, 0)
     vlnocet = e*np.mean(tab_min) / (h*c)
     print(name + "  --------------")
     print("U mean = ", np.mean(tab_min))
@@ -72,3 +77,4 @@ def mes(name):
     #plt.show()
 
 mes("hg")
+mes("neon")

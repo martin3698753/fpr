@@ -1,3 +1,5 @@
+%https://edu.techmania.cz/cs/encyklopedie/fyzika/kvanta/sommerfelduv-model-atomu/franck-hertzuv-experiment
+
 \documentclass{article}
 \usepackage[utf8]{inputenc}
 \usepackage{blindtext}
@@ -83,7 +85,7 @@ Data jsem exportoval.
 tabular = |c|c|c|,
 table head =
 \hline
-{index} & {Peaky černých pixelů} & {Vzdálenost mezi}\\
+{index minim} & {Urychlovací napětí $U_{a}[V]$} & {$\Delta U_{a} [V]$}\\
 \hline
 \hline,
 late after line = \\\hline
@@ -92,8 +94,8 @@ late after line = \\\hline
 \\
 \vspace{1em}
 \\
-$\overline{\Delta U_{Hg}} = 4.463$\\
-$\sigma_{\Delta U}_{Hg} = 0.456$
+$\overline{\Delta U_{Hg}} = 4.91$\\
+$\sigma_{\Delta U}_{Hg} = 0.1037$
 \\
 \vspace{1em}
 \\
@@ -102,7 +104,7 @@ $\sigma_{\Delta U}_{Hg} = 0.456$
 tabular = |c|c|c|,
 table head =
 \hline
-{index} & {Peaky černých pixelů} & {Vzdálenost mezi}\\
+{index minim} & {Urychlovací napětí $U_{a}[V]$} & {$\Delta U_{a} [V]$}\\
 \hline
 \hline,
 late after line = \\\hline
@@ -111,8 +113,8 @@ late after line = \\\hline
 \\
 \vspace{1em}
 \\
-$\overline{\Delta U_{Ne}} = 12.56$\\
-$\sigma_{\Delta U}_{Ne} = 6.324$
+$\overline{\Delta U_{Ne}} = 18.85$\\
+$\sigma_{\Delta U}_{Ne} = 1.25$
 \\
 \vspace{1em}
 \\
@@ -120,19 +122,41 @@ Chybu jsem počítal podle vzorce
 $$\sigma_{U} = \sqrt{\frac{ \Sigma_{i=1}^{i=n}(\overline{U}-U)^{2} }{n(n-1)} }$$
 \vspace{2em}
 Po přenásobení těchto hodnot elementárním nábojem mi vyjde energie, kterou elektrony ztrácejí při srážkách mezi atomy.
-$$E_{hg} = e \cdot \Delta U_{Hg} = 7,1515 \cdot 10^{-19} [J]$$
-$$E_{ne} = e \cdot \Delta U_{Ne} = 2,0133 \cdot 10^{-18} [J]$$
+$$E_{hg} = e \cdot \Delta U_{Hg} = 7,86 \cdot 10^{-19} [J]$$
+$$E_{ne} = e \cdot \Delta U_{Ne} = 3.02 \cdot 10^{-18} [J]$$
 \\
+Tyto hodnoty pak můžu převést na elektronvolty tak, že hodnoty vydělím nábojem $e$
+$$E_{hg} = \frac{e \cdot \Delta U_{hg}}{e} = \Delta U_{Hg} = 4.91 eV$$
+Podobně pro neon
+$$E_{ne} = 18.85 eV$$
 Tyto hodnoty jsem pak přepočetl na vlnočet pomocí vzorce
 $$\nu = \frac{E}{hc} [m^{-1}]$$
 Po dosazení do vzorce mi vyšlo
-$$\nu_{Hg} = 3,6 \cdot 10^{6}$$
-$$\nu_{Ne} = 10,13 \cdot 10^{6}$$
+$$\nu_{Hg} = 3,96 \cdot 10^{6}$$
+$$\nu_{Ne} = 15.2 \cdot 10^{6}$$
 \newpage
 Chybu vlnočtu jsem počítal jako
 $$\delta_{Hg} = \sqrt{ \left(  \frac{ \partial \left( \frac{e \cdot E_{Hg}}{c \cdot h} \right) }{ \partial (h \cdot c) } \cdot \sigma_{E}_{Hg}  \right)^{2} }$$
 $$\delta_{Hg} = \sqrt{ \left( \frac{c \cdot E_{Hg} + c \cdot h}{h^{2} c^{2}} \sigma_{E}_{Hg} \right)^{2} }$$
-$$\delta_{Hg} = $$
-
-
+Kde $\sigma_{E}_{Hg}$ jsem počítal jako
+$$\sigma_{E}_{Hg} = \sqrt{ \left( \frac{e \cdot \overline{\Delta U_{Hg}}}{\overline{\Delta U_{Hg}}} \cdot \sigma_{\Delta E}_{Hg} \right) }$$
+Ano, je tam rozdíl mezi $\sigma_{\Delta E}_{Hg}$ a $\sigma_{E}_{Hg}$
+$$\therefore \delta_{Hg} = 1.974 \cdot 10^{-5}$$
+Podobně chyba u neonu mi vyšla
+$$\delta_{Ne} = 9.128 \cdot 10^{-4}$$
+\section{Diskuse}
+Úkolem bylo změřit voltampérovou charakteristiku Frank-Hertzovy trubice plněné rtuťí a potom ještě
+jednu s neonem. Když porovnám moje naměřené hodnoty s tabulkovými: \\
+Excitační energie pro rtuť mi vyšla $4.91 eV$, podle tabulek je tato energie $4.9 eV$. \\
+Excitační energie pro neon mi vyšla $18.85 eV$, podle tabulek je tato energie $18.5 eV$. \\
+\section{Závěr}
+\subsection{Rozdíly urychlovacího napětí rtuťi a neonu}
+$$\overline{\Delta U_{Hg}} = (4.91 \pm 0.1037) V $$
+$$\overline{\Delta U_{Ne}} = (18.85 \pm 1.245) V $$
+\subsection{Excitační energie rtuťi a neonu}
+$$E_{hg} = 7,86 \cdot 10^{-19} J$$
+$$E_{ne} = 3.02 \cdot 10^{-18} J$$
+\subsection{Vlnočet rtuťi a neonu}
+$$\nu _{Hg} = 3.96 \cdot 10^{6} \pm 19.73 \cdot 10^{-4} m^{-1}$$
+$$\nu _{Ne} = 15.2 \cdot 10^{6} \pm 9.12 \cdot 10^{-4} m^{-1}$$
 \end{document}
