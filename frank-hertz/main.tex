@@ -64,4 +64,75 @@ Na osciloskopu se objevili dvě křivky jako posledně.
 Zvyšoval jsem zpomalující napětí, dokud nebyla křivka téměř rovná.
 Potom jsem opět upravil parametry tak, aby bylo na křivce dobře rozeznat extrema.
 Data jsem exportoval.
+\section{Vypracovaná data}
+\subsection{Grafy}
+\begin{figure}[!h]
+  \hspace*{-10em}
+  \includegraphics[scale=1.2]{data/hg.pdf}
+  \caption{Frank-Hertzova křivka pro rtuť}
+\end{figure}
+\begin{figure}[!h]
+  \hspace*{-10em}
+  \includegraphics[scale=1.2]{data/neon.pdf}
+  \caption{Frank-Hertzova křivka pro neon}
+\end{figure}
+\newpage
+\subsection{Tabulky}
+\footnotesize{Tabulka 1: rtuť}\\
+\csvreader[
+tabular = |c|c|c|,
+table head =
+\hline
+{index} & {Peaky černých pixelů} & {Vzdálenost mezi}\\
+\hline
+\hline,
+late after line = \\\hline
+]{data/hg.csv}{}{
+  \csvcoli & \csvcolii & \csvcoliii}
+\\
+\vspace{1em}
+\\
+$\overline{\Delta U_{Hg}} = 4.463$\\
+$\sigma_{\Delta U}_{Hg} = 0.456$
+\\
+\vspace{1em}
+\\
+\footnotesize{Tabulka 2: neon}\\
+\csvreader[
+tabular = |c|c|c|,
+table head =
+\hline
+{index} & {Peaky černých pixelů} & {Vzdálenost mezi}\\
+\hline
+\hline,
+late after line = \\\hline
+]{data/neon.csv}{}{
+  \csvcoli & \csvcolii & \csvcoliii}
+\\
+\vspace{1em}
+\\
+$\overline{\Delta U_{Ne}} = 12.56$\\
+$\sigma_{\Delta U}_{Ne} = 6.324$
+\\
+\vspace{1em}
+\\
+Chybu jsem počítal podle vzorce
+$$\sigma_{U} = \sqrt{\frac{ \Sigma_{i=1}^{i=n}(\overline{U}-U)^{2} }{n(n-1)} }$$
+\vspace{2em}
+Po přenásobení těchto hodnot elementárním nábojem mi vyjde energie, kterou elektrony ztrácejí při srážkách mezi atomy.
+$$E_{hg} = e \cdot \Delta U_{Hg} = 7,1515 \cdot 10^{-19} [J]$$
+$$E_{ne} = e \cdot \Delta U_{Ne} = 2,0133 \cdot 10^{-18} [J]$$
+\\
+Tyto hodnoty jsem pak přepočetl na vlnočet pomocí vzorce
+$$\nu = \frac{E}{hc} [m^{-1}]$$
+Po dosazení do vzorce mi vyšlo
+$$\nu_{Hg} = 3,6 \cdot 10^{6}$$
+$$\nu_{Ne} = 10,13 \cdot 10^{6}$$
+\newpage
+Chybu vlnočtu jsem počítal jako
+$$\delta_{Hg} = \sqrt{ \left(  \frac{ \partial \left( \frac{e \cdot E_{Hg}}{c \cdot h} \right) }{ \partial (h \cdot c) } \cdot \sigma_{E}_{Hg}  \right)^{2} }$$
+$$\delta_{Hg} = \sqrt{ \left( \frac{c \cdot E_{Hg} + c \cdot h}{h^{2} c^{2}} \sigma_{E}_{Hg} \right)^{2} }$$
+$$\delta_{Hg} = $$
+
+
 \end{document}

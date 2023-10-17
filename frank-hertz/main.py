@@ -5,8 +5,24 @@ from scipy.signal import find_peaks, argrelextrema
 
 plt.rcParams['text.usetex'] = True
 
+e = 1.60217*10**(-19)
+h = 6.62607*10**(-34)
+c = 299792458
+
 neon_min = np.array([26.4, 44, 64.1])
 hg_min = np.array([28.6, 33.4, 38.3, 43.1, 47.9, 52.7, 57.5, 62.3, 68.1, 72.7, 77.7])
+
+def par_er(E, sigma):
+    in_sq_up = (c*E) + h*c
+    in_sq_dw = h**2 * c**2
+    return np.sqrt(((in_sq_up*sigma)/in_sq_dw)**2)
+
+def err(ar):
+    le = ar.shape[0]
+    sig = 0
+    for i in range(le):
+        sig += (np.mean(ar) - ar[i])**2
+    return (np.sqrt( sig / (le*(le-1)) ))
 
 def mes(name):
     mess = pd.read_csv(name + ".csv", index_col=0)
@@ -32,6 +48,7 @@ def mes(name):
         tab = hg_min
     #print(mess.to_markdown())
     #plt.show()
+    #plt.savefig("data/" + name + ".pdf")
     tab_min = np.zeros(tab.shape[0])
     for i in range(tab.shape[0]-1):
         tab_min[i+1] = tab[i+1] - tab[i]
@@ -39,9 +56,19 @@ def mes(name):
     df_min = pd.DataFrame(
         {
             "Ua":tab,
-            "delta Ua":tab_min
+            "delta Ua":tab_min,
         }
     )
-    print(df_min)
+    df_min = df_min.round(3)
+    df_min.to_csv("data/" + name + ".csv")
 
-mes("neon")
+    vlnocet = e*np.mean(tab_min) / (h*c)
+    print(name + "  --------------")
+    print("U mean = ", np.mean(tab_min))
+    print("U err = ", err(tab_min))
+    print("Excit = ", e*np.mean(tab_min))
+    print("vlnocet = ", vlnocet)
+    print("vlnocet er = ", par_er(np.mean(tab_min)*e, err(tab_min)))
+    #plt.show()
+
+mes("hg")
