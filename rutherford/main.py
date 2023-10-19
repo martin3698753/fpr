@@ -22,6 +22,4 @@ df = pd.DataFrame(
     }
 )
 df = df.round(3)
-#plt.scatter(ang, N)
-plt.plot(angl, np.divide(1, np.sin(angl)))
-plt.show()
+print(df)
