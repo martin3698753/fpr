@@ -1,0 +1,69 @@
+% https://cs.wikipedia.org/wiki/Rydbergova_konstanta
+% https://cs.wikipedia.org/wiki/Balmerova_s%C3%A9rie
+
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{blindtext}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{csvsimple}
+\usepackage{pdfpages}
+\usepackage{hyperref}
+\usepackage{gensymb}
+
+\begin{document}
+\begin{center}
+\textbf{\Huge{University of South Bohemia}}\\
+\vspace{50px}
+\textbf{\Large{Faculty of Science}} \\
+\vspace{30px}
+\includegraphics[width=120px]{~/school/logo.png} \\
+\vspace{30px}
+\textbf{\large{Praktika IV}}
+\vspace{20px}
+\\
+\vspace{20px}
+\large{Určení Rydbergovi konstanty} \\
+\vspace{60px}
+\end{center}
+\begin{flushleft}
+Datum: 18.10.2023 \\
+Jmeno: Martin Skok \\
+Obor: Fyzika \\
+Hodnoceni:
+\end{flushleft}
+\newpage
+\section{Úkoly}
+\begin{itemize}
+        \item Okalibrujte spektograf pomocí sodíkové lampy
+        \item Změřte vlnové délky čar Balmerovy série vodíku/deuteria
+        \item Vypočtěte Rydbergovu konstantu a z ní vypočtěte Planckovu konstantu
+\end{itemize}
+
+\section{Seznam pomůcek}
+Spektrometr, držák s optickou mřížkou/hranolem, sodíková lampa, zdroj sodíkové lampy,
+vodíková spektrální trubice, lampička na přisvícení.
+\section{Teorie}
+Rydbergova konstanta je fyzikální konstanta pojmenovaná po švédském fyzikovi Johannesu Rydbergovi. Představuje nejvyšší možný vlnočet (převrácená hodnota vlnové délky) elektromagnetického záření, které může vyzářit nejjednodušší atom – atom vodíku – v limitě nekonečné hmotnosti jádra.\\
+V tomto měření chceme najít Rydbergovu konstantu z Balmerovi série.\\
+Balmerova série je série spektrálních čar (Balmerovy čáry) ve spektru atomů vodíku, které vznikají při přechodu elektronů mezi druhou energetickou hladinou a vyššími hladinami. Při přechodu elektronu mezi druhou a třetí energetickou hladinou se utváří při astronomických pozorování velmi důležitá červená čára $H_{\alpha}$ (s vlnovou délkou 656,3 nm), při přechodu mezi druhou a čtvrtou hladinou vzniká čára $H_{\beta}$ atd...
+\begin{equation}
+  \frac{1}{\lambda_{n}} = R_{H} \left( \frac{1}{2^{2}} - \frac{1}{n^{2}} \right) \left[\frac{1}{m}\right] ; \quad (n \in N) \land (n > 2)
+\end{equation}
+$\lambda$ je vlnová délka a $R_{H}$ je Rydbergova konstanta pro vodík.\\
+Klasickou korekci Rydbergovi konstanty na konečné jádro provedeme pomocí vzorce
+\begin{equation}
+  R_{\infty} = R_{H} \frac{m_{p} + m_{e}}{m_{p}}
+\end{equation}
+$m_{p} = 1.6726 \cdot 10^{-27}[kg]$ je hmotnost protonu a $m_{e} = 9.1093 \cdot 10^{-31}[kg]$ je hmotnost elektronu.\\
+Polohy maxim jsou dány vzorcem
+\begin{equation}
+  d sin \theta = m \lambda
+\end{equation}
+$d$ je mřížková konstanta, $m$ je řád difrakce, $\lambda$ je vlnová délka a $\theta$ je úhel difrakce.
+Úhel pro difrakci se zjistí ze vztahu
+\begin{equation}
+  \theta = \frac{\theta_{L} - \theta_{P}}{2}
+\end{equation}
+$\theta_{L}$ je úhel naměřený vlevo od nulové polohy a $\theta_{R}$ úhel naměřený vpravo od nulové polohy.
+\end{document}
