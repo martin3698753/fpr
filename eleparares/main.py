@@ -5,6 +5,8 @@ import matplotlib.pyplot as plt
 from scipy.signal import find_peaks as fp
 
 plt.rc('text', usetex=True)
+res = np.zeros(8)
+freq = np.zeros(8)
 
 def graph(name, i):
     df = pd.read_csv("data/" + str(f'{name:g}') + ".csv", index_col=0)
@@ -14,6 +16,10 @@ def graph(name, i):
     peaks = fp(y, height=0.5, threshold=None)
     height = peaks[1]['peak_heights']
     index = x[peaks[0]][0]
+
+    res[i-1] = index
+    freq[i-1] = name
+
     plt.scatter(index, height)
     plt.axhline(y=height, linestyle='--', lw=0.8, c='green')
     plt.axvline(x=index, linestyle='--', lw=0.8, c='green')
@@ -37,3 +43,19 @@ for i in range(len(files)):
 files = sorted(files)
 for i in range(1,9):
     graph(files[i], i)
+
+magf = np.array(np.multiply(3.648,res))
+ub = 9.27401*10**(-24)
+h = 6.62607*10**(-34)
+g = np.array(np.divide( np.multiply(freq, h), np.multiply(magf, ub) ))
+resd = pd.DataFrame(
+    {
+        "Freq":freq,
+        "Res_voltage":res,
+        "Mag field Br":magf,
+        "g_faktor":g
+    }
+)
+print(resd)
+plt.scatter(freq, magf)
+plt.show()
