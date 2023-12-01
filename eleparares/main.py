@@ -3,6 +3,7 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 from scipy.signal import find_peaks as fp
+from scipy.optimize import curve_fit
 
 plt.rc('text', usetex=True)
 res = np.zeros(8)
@@ -48,14 +49,28 @@ magf = np.array(np.multiply(3.648,res))
 ub = 9.27401*10**(-24)
 h = 6.62607*10**(-34)
 g = np.array(np.divide( np.multiply(freq, h), np.multiply(magf, ub) ))
+
+coeff = np.polyfit(freq, magf, deg=1)
+fitc = np.poly1d(coeff)
+xspace = np.linspace(min(freq), max(freq), 10000)
+
 resd = pd.DataFrame(
     {
         "Freq":freq,
         "Res_voltage":res,
         "Mag field Br":magf,
-        "g_faktor":g
+        "g_faktor":np.multiply(g, 10**9)
     }
 )
+resd = resd.round(3)
+resd.to_csv("figs/resd.csv")
 print(resd)
-plt.scatter(freq, magf)
-plt.show()
+print(np.mean(g))
+print(np.std(g, ddof=1))
+plt.xlabel("Rezonanční frekvence " + r"$f_r [Mhz]$")
+plt.ylabel("Rezonanční magnetické pole " + r"$B_r [mT]$")
+plt.scatter(freq, magf, label=r"$B_r(f_r)$")
+coeff = np.round(coeff, 3)
+plt.plot(xspace, fitc(xspace), "--", label=str(coeff[0]) + r"$f_r$" + r"$+$" + str(coeff[1]))
+plt.legend()
+#plt.show()

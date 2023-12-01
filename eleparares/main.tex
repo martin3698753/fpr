@@ -1,4 +1,5 @@
- . .
+%https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Supplemental_Modules_(Physical_and_Theoretical_Chemistry)/Spectroscopy/Magnetic_Resonance_Spectroscopies/Electron_Paramagnetic_Resonance/EPR_-_Interpretation
+
 \documentclass{article}
 \usepackage[utf8]{inputenc}
 \usepackage{blindtext}
@@ -51,39 +52,73 @@ Frekvence jsem ne vždy dokázal nastavit na přesnou hodnotu, tak jsem si vždy
   \includegraphics[scale=1.2]{figs/1.pdf}
   \caption{Graf závislosti napětí odezvy vzorku na napětím budícím magnetické pole}
 \end{figure}
+\clearpage
 \begin{figure}[!h]
   \hspace*{-10em}
   \includegraphics[scale=1.2]{figs/2.pdf}
   \caption{Graf závislosti napětí odezvy vzorku na napětím budícím magnetické pole}
 \end{figure}
+\clearpage
 \begin{figure}[!h]
   \hspace*{-10em}
   \includegraphics[scale=1.2]{figs/3.pdf}
   \caption{Graf závislosti napětí odezvy vzorku na napětím budícím magnetické pole}
 \end{figure}
+\clearpage
 \begin{figure}[!h]
   \hspace*{-10em}
   \includegraphics[scale=1.2]{figs/4.pdf}
   \caption{Graf závislosti napětí odezvy vzorku na napětím budícím magnetické pole}
 \end{figure}
+\clearpage
 \begin{figure}[!h]
   \hspace*{-10em}
   \includegraphics[scale=1.2]{figs/5.pdf}
   \caption{Graf závislosti napětí odezvy vzorku na napětím budícím magnetické pole}
 \end{figure}
+\clearpage
 \begin{figure}[!h]
   \hspace*{-10em}
   \includegraphics[scale=1.2]{figs/6.pdf}
   \caption{Graf závislosti napětí odezvy vzorku na napětím budícím magnetické pole}
 \end{figure}
+\clearpage
 \begin{figure}[!h]
   \hspace*{-10em}
   \includegraphics[scale=1.2]{figs/7.pdf}
   \caption{Graf závislosti napětí odezvy vzorku na napětím budícím magnetické pole}
 \end{figure}
+\clearpage
 \begin{figure}[!h]
   \hspace*{-10em}
   \includegraphics[scale=1.2]{figs/8.pdf}
   \caption{Graf závislosti napětí odezvy vzorku na napětím budícím magnetické pole}
 \end{figure}
+\newpage
+
+\section{Zpracování dat}
+\footnotesize{Tabulka 1:}\\
+\csvreader[
+tabular = |c|c|c|c|c|,
+table head =
+\hline
+{index}&{$f_{r} [MHz]$}&{$U_{r} [V]$}&{$B_{r} [mT]$}&{$g$}\\
+\hline
+\hline,
+late after line = \\\hline
+]{figs/resd.csv}{}{
+  \csvcoli & \csvcolii & \csvcoliii & \csvcoliv & \csvcolv}
+\\
+\vspace{1em}
+\\
+$$\overline{g} = \sum^{n}_{i=1}\frac{g_{i}}{n}$$
+$\overline{g} = 1.8539$\\
+
+$$\sigma_{g} = \sqrt{\frac{\sum^{n}_{i=1}(g_{i} - \overline{g})^{2}}{n-1}}$$
+$\sigma_{g} = 0.029307$
+\\
+\vspace{1em}
+\\
+\section{Diskuse}
+\section{Závěr}
 \end{document}
