@@ -1,7 +1,7 @@
 % https://cs.wikipedia.org/wiki/Rydbergova_konstanta
 % https://cs.wikipedia.org/wiki/Balmerova_s%C3%A9rie
 % https://chem.libretexts.org/Bookshelves/General_Chemistry/Book%3A_General_Chemistry%3A_Principles_Patterns_and_Applications_(Averill)/06%3A_The_Structure_of_Atoms/6.03%3A_Atomic_Spectra_and_Models_of_the_Atom
-
+% https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Physical_Chemistry_(LibreTexts)/01%3A_The_Dawn_of_the_Quantum_Theory/1.04%3A_The_Hydrogen_Atomic_Spectrum
 \documentclass{article}
 \usepackage[utf8]{inputenc}
 \usepackage{blindtext}
@@ -83,7 +83,50 @@ Opakoval jsem následující i pro pravou stranu.
 Vyměnil jsem sodíkovou lampu za vodíkovou.
 Nastavil jsem rameno do nulové polohy a dělal jsem přesně to samý jako u sodíkový lampy.
 Dokázal jsem změřit difrakci k 4. řádu.
-\section{}
+\section{Data}
+\subsection{Sodium}
+\footnotesize{Tabulka 1:}\\
+\large{
+\csvreader[
+tabular = |c|c|c|c|c|,
+table head =
+\hline
+{doleva}&{doprava}&{difrakce}&{difrakční uhel $\theta [\degree]$}&{mřížková konst. $d [m \cdot 10^{-6}]$}\\
+\hline
+\hline,
+late after line = \\\hline
+]{tabs/sod.csv}{}{
+  \csvcoli & \csvcolii & \csvcoliii & \csvcoliv & \csvcolv}
+\\
+}
+\vspace{1em}
+\\
+$$\overline{d} = \sum^{n}_{i=1}\frac{d_{i}}{n}$$
+$\overline{d} = 1.663 \cdot 10^{-6}$\\
+
+$$\sigma_{d} = \sqrt{\frac{\sum^{n}_{i=1}(d_{i} - \overline{d})^{2}}{n-1}}$$
+$\sigma_{d} = 5.3342 \cdot 10^{-9}$
+\\
+\vspace{1em}
+\\
+Pro určení vlnových délek a jejich přechodů jsem používal tuto tabulku:\\
+\footnotesize{Tabulka 2:}\\
+\large{
+\csvreader[
+tabular = |c|c|c|,
+table head =
+\hline
+{$n_{2}$}&{$\lambda$}&{color}\\
+\hline
+\hline,
+late after line = \\\hline
+]{tabs/colors.csv}{}{
+  \csvcoli & \csvcolii & \csvcoliii }
+\\
+}
+\vspace{1em}
+\\
+\subsection{Hydrogen}
 \section{}
 \section{}
 \section{}
