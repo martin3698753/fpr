@@ -81,21 +81,26 @@ hyd_df = pd.DataFrame(
     {
         "doleva":hyd_l,
         "doprava":hyd_r,
-        "theta":theta_h,
         "difrakce":dif,
+        "theta":theta_h,
         "lambda[nm]":np.multiply(lam, 10**9),
         "color":colors,
         "rh e6":np.multiply(rh, 10**(-6)),
     }
 )
 hyd_df = hyd_df.round(3)
+hyd_df.to_csv("tabs/hyd.csv", index=False)
 mp = 1.672721777*10**(-27)
 me = 9.10938215*10**(-31)
 c = 299792458
 e0 = 8.8541878176*10**(-12)
 e = 1.602176634*10**(-19)
 rh_inf = np.mean(rh) * ((mp + me)/mp)
+rh_inf_er = np.std(rh, ddof=1) * ((mp + me)/mp)
+print(rh_inf_er)
 #print(rh_inf)
 #print( ((me * e**4) / (8*e0**2 * rh_inf * c))**(1/3) )
-print(hyd_df)
-print("rh_inf ", rh_inf)
+print( ((me * e**4) / (8*e0**2 * rh_inf_er * c))**(1/3) )
+#print(hyd_df)
+#print("RH mean: ", np.mean(rh), "| RH std: ", np.std(rh, ddof=1))
+#print("rh_inf ", rh_inf)
