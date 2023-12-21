@@ -64,10 +64,33 @@ coils_charge = pd.DataFrame(
 )
 
 #### Dif circles ####
+d1 = np.array([26, 25, 25, 26, 25, 23])
+d2 = np.array([44, 42, 42, 40, 39, 38])
+
+def lam(V):
+    V = np.multiply(V, 1000)
+    h = 6.62607015*10**(-34)
+    me = 9.1093837015*10**(-31)
+    e = 1.602176634*10**(-19)
+    b = np.sqrt( np.multiply(V, 2*e*me) )
+    return np.divide(h, b)
+
+def d(lam, d1):
+    n = lam
+    L = 135
+    R = 65
+    l = np.add(L-R, np.sqrt(np.subtract(R**2, np.divide( np.power(d1, 2), 4))))
+    alpha = np.multiply(1/2, np.arctan(np.divide(d1, np.multiply(2, l))))
+    return np.divide(n, np.multiply(2, np.sin(alpha)))
+
+V = np.arange(4, 5.1, 0.2)
 dif_circle = pd.DataFrame(
     {
-        "voltage":np.arange(4, 5.1, 0.2),
-        "d1":np.array(26, 25, 25, 26, 25, 23),
-        "d2":np.array(44, 42, 42, 40, 39, 38),
+        "voltage":V,
+        "d1":d1,
+        "d2":d2,
+        "d1_v":d(lam(V), d1)*10**12,
+        "d2_v":d(lam(V), d2)*10**12,
     }
 )
+print(dif_circle)
