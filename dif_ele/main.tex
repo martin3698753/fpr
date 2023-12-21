@@ -46,15 +46,60 @@ luminiscenční deska,
 propojovací vodiče,
 elektronová difrakční trubice
 \section{Teorie}
+\subsection{Specifický náboj elektronu}
 Helmholtzovy cívky tvoři homogení magnetické pole.
 Uvnitř těchto cívek je katodová trubice která generuje paprsek elektronů.
 Směr pohybu elektronu je kolmý k magnetickému poli.
 Aby byly trajektrorie elektronů vidět, experiment se provede
 ve skleněné nádobě naplněné neonovým plynem.
-
+Intenzita magnetického pole je dána jako
+\begin{equation}
+  B = \left( \frac{4}{5} \right)^{\frac{3}{2}} \frac{\mu_{0}N}{R} I
+\end{equation}
+Kde $N$ je počet závitů, což bude v našem případě 320 a $R$ je poloměr cívky, což je v našem případě
+$62 mm$.\\
+Poloměr zakřivení dráhy elektronů bude pro tento případ. Vše se odvodí z geometri problému.
+\begin{equation}
+  r = \frac{(80mm)^{2} + e^{2}}{\sqrt{2} (80mm - e)}
+\end{equation}
+A konečně specifický náboj pak získáme pomocí
+\begin{equation}
+  \frac{q}{m} = \frac{2V}{(Br)^{2}}
+\end{equation}
+Kde $V$ je napětí.
+\subsection{Difrakce elektronu}
+Podle L.D.Broglieho mají elektrony a další částice vlnovou délku, která je nepřímo úměrná jejich
+hybnosti.
+\begin{equation}
+  \lambda = \frac{h}{p}
+\end{equation}
+Díky tomu mají rychlé elektrony velmi krátkou vlnovou délku, která je srovnatelná s rozestupy mezi atomovými vrstvami v krystalech. Protože elektrony mají vlnovou povahu, mohou podléhat difrakci.
+Kinetická energie elektronu je
+\begin{equation}
+  T = eV = \frac{p^{2}}{2m_{e}}
+\end{equation}
+Vyjádříme hybnost a dosadíme do rovnice nahoře
+\begin{equation}
+  \lambda = \frac{h}{\sqrt{2m_{e}eV}}
+\end{equation}
+Z difrakce na jedné štěrbině vím, že
+\begin{equation}
+  2dsin(\alpha) = n \lambda
+\end{equation}
+Z geometri problému můžeme vyjádřit úhel z této rovnice
+\begin{equation}
+  tan(2 \alpha) = \frac{\frac{D}{2}}{l_{1} + l_{2}}
+\end{equation}
+Kde $l_{1} = L - R$ a $l_{2} = \sqrt{R^{2} - \frac{D^{2}}{4}}$\\
+$L = 135mm$ a $R = 65mm$ jsou paramtery trubice.\\
+To vše pak můžeme dát dohromady a dostaneme tuto rovnici:
+\begin{equation}\label{final}
+  d = n \lambda \cdot \frac{1}{2sin \left(\frac{1}{2} arctan \left( \frac{D}{2(l_{1} + l_{2})} \right)  \right)}
+\end{equation}
 
 
 \section{Postup měření}
+\subsection{Specifický náboj elektronu}
 Nejdříve jsem zapojil měření s Helmholtovými cívkami a všechny potenciometry jsem nastavil na nulu.
 Zapnul jsem vysokonapěťový zdroj a počkal jsem, až se katoda nažhavý.
 Nastavil jsem urychlovací na 2 kV. Na luminiscenční desce byl vidět svazek.
@@ -62,6 +107,9 @@ Zapnul jsem porudový zdroj a zvyšoval proud, dokud svazek nedosáhl stupnice n
 Zvyšoval jsem proud v cívkách a zaznamenával hodnoty pro různé hodnoty ohybu.
 Potom jsem zvíšil napětí na 3kV a opakoval měření proudu.
 To jsem zopáknul pro hodnoty 4kV, 5kV.
+\subsection{Difrakce elektronu}
+Před zapnutím jsem stáhnul zdroj na nulu. Zvyšoval jsem napětí na $4KV$. Na skle jsem potom viděl
+dva prstence. Pomocí posuvného měřítka jsem změřil průměry obou prstenců. Toto jsem udělal i pro další napětí do $5KV$.
 \section{}
 \section{}
 \section{}
