@@ -53,47 +53,47 @@ Směr pohybu elektronu je kolmý k magnetickému poli.
 Aby byly trajektrorie elektronů vidět, experiment se provede
 ve skleněné nádobě naplněné neonovým plynem.
 Intenzita magnetického pole je dána jako
-\begin{equation}
+\begin{equation}\label{eq:B}
   B = \left( \frac{4}{5} \right)^{\frac{3}{2}} \frac{\mu_{0}N}{R} I
 \end{equation}
 Kde $N$ je počet závitů, což bude v našem případě 320 a $R$ je poloměr cívky, což je v našem případě
 $62 mm$.\\
 Poloměr zakřivení dráhy elektronů bude pro tento případ. Vše se odvodí z geometri problému.
-\begin{equation}
+\begin{equation}\label{eq:r}
   r = \frac{(80mm)^{2} + e^{2}}{\sqrt{2} (80mm - e)}
 \end{equation}
 A konečně specifický náboj pak získáme pomocí
-\begin{equation}
+\begin{equation}\label{eq:qm}
   \frac{q}{m} = \frac{2V}{(Br)^{2}}
 \end{equation}
 Kde $V$ je napětí.
 \subsection{Difrakce elektronu}
 Podle L.D.Broglieho mají elektrony a další částice vlnovou délku, která je nepřímo úměrná jejich
 hybnosti.
-\begin{equation}
+\begin{equation}\label{eq:deb}
   \lambda = \frac{h}{p}
 \end{equation}
 Díky tomu mají rychlé elektrony velmi krátkou vlnovou délku, která je srovnatelná s rozestupy mezi atomovými vrstvami v krystalech. Protože elektrony mají vlnovou povahu, mohou podléhat difrakci.
 Kinetická energie elektronu je
-\begin{equation}
+\begin{equation}\label{eq:kin}
   T = eV = \frac{p^{2}}{2m_{e}}
 \end{equation}
 Vyjádříme hybnost a dosadíme do rovnice nahoře
-\begin{equation}
+\begin{equation}\label{eq:lam}
   \lambda = \frac{h}{\sqrt{2m_{e}eV}}
 \end{equation}
 Z difrakce na jedné štěrbině vím, že
-\begin{equation}
+\begin{equation}\label{eq:dif}
   2dsin(\alpha) = n \lambda
 \end{equation}
 Z geometri problému můžeme vyjádřit úhel z této rovnice
-\begin{equation}
+\begin{equation}\label{eq:tan}
   tan(2 \alpha) = \frac{\frac{D}{2}}{l_{1} + l_{2}}
 \end{equation}
 Kde $l_{1} = L - R$ a $l_{2} = \sqrt{R^{2} - \frac{D^{2}}{4}}$\\
 $L = 135mm$ a $R = 65mm$ jsou paramtery trubice.\\
 To vše pak můžeme dát dohromady a dostaneme tuto rovnici:
-\begin{equation}\label{final}
+\begin{equation}\label{eq:final}
   d = n \lambda \cdot \frac{1}{2sin \left(\frac{1}{2} arctan \left( \frac{D}{2(l_{1} + l_{2})} \right)  \right)}
 \end{equation}
 
@@ -110,7 +110,81 @@ To jsem zopáknul pro hodnoty 4kV, 5kV.
 \subsection{Difrakce elektronu}
 Před zapnutím jsem stáhnul zdroj na nulu. Zvyšoval jsem napětí na $4KV$. Na skle jsem potom viděl
 dva prstence. Pomocí posuvného měřítka jsem změřil průměry obou prstenců. Toto jsem udělal i pro další napětí do $5KV$.
-\section{}
+\section{Data}
+\subsection{Specifický náboj elektronu}
+\csvreader[
+tabular = |c|c|c|c|c|,
+table head =
+\hline
+{} & {$2KV$} & {$3KV$} & {$4KV$} & {$5KV$}\\
+{ohyb $e[mm]$} & {Proud $I[A]$} & {Proud $I[A]$} & {Proud $I[A]$} & {Proud $I[A]$}\\
+\hline
+\hline,
+late after line = \\\hline
+]{data/coils_cur.csv}{}{
+  \csvcoli & \csvcolii & \csvcoliii & \csvcoliv & \csvcolv}
+\\
+\vspace{1em}
+\\
+Specifký náboj elektronu jsem počítal podle rovnice \ref{eq:qm}.
+\\
+\vspace{1em}
+\\
+\csvreader[
+tabular = |c|c|c|c|,
+table head =
+\hline
+{$2KV$} & {$3KV$} & {$4KV$} & {$5KV$}\\
+\hline
+\multicolumn{4}{|c|}{Specifický náboj $\frac{q}{m} \left[ \frac{C}{kg} \cdot 10^{11} \right]$}\\
+\hline
+\hline,
+late after line = \\\hline
+]{data/coils_charge.csv}{}{
+  \csvcoli & \csvcolii & \csvcoliii & \csvcoliv}
+\\
+\vspace{1em}
+\\
+Aritmetický průměr:
+$$\overline{ \left( \frac{q}{m} \right)} = 1.545288 \cdot 10^{11}$$
+Směrodatná odchylka:
+$$\sigma_{\frac{q}{m}} = 0.083 \cdot 10^{11}$$
+
+\subsection{Difrakce elektronu}
+\csvreader[
+tabular = |c|c|c|,
+table head =
+\hline
+{Napětí $V[KV]$} & {$D_1[mm]$} & {$D_2[mm]$}\\
+\hline
+\hline,
+late after line = \\\hline
+]{data/rings.csv}{}{
+  \csvcoli & \csvcolii & \csvcoliii}
+\\
+\vspace{1em}
+\\
+Vzdálenosti mezi rovinami grafitové difrakční mřížky jsem získal ze vztahu \ref{eq:final}.
+\\
+\vspace{1em}
+\\
+\csvreader[
+tabular = |c|c|c|,
+table head =
+\hline
+{Napětí $V[KV]$} & {$d_1[pm]$} & {$d_2[pm]$}\\
+\hline
+\hline,
+late after line = \\\hline
+]{data/dif_circle.csv}{}{
+  \csvcoli & \csvcolii & \csvcoliii}
+\\
+\vspace{1em}
+\\
+$$\overline{d_1} = 196.862 \cdot 10^(12)$$
+$$\sigma_{d_1} = 6.295 \cdot 10^(12)$$
+$$\overline{d_2} = 119.327 \cdot 10^(12)$$
+$$\sigma_{d_2} = 1.843 \cdot 10^(12)$$
 \section{}
 \section{}
 \section{}

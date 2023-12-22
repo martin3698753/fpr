@@ -24,13 +24,18 @@ def qm(I, e, U):
     b = np.power( np.multiply(mag(I), r(e)), 2 )
     return np.divide(a, b)
 
+d1 = np.array([26, 25, 25, 26, 25, 23])
+d2 = np.array([44, 42, 42, 40, 39, 38])
+
 rings = pd.DataFrame(
     {
         "Napeti":np.arange(4, 5.1, 0.2),
-        "d1":np.array([2.6, 2.5, 2.5, 2.6, 2.5, 2.3]),
-        "d2":np.array([4.4, 4.2, 4.2, 4, 3.9, 3.8]),
+        "d1":d1,
+        "d2":d2,
     }
 )
+rings = rings.round(3)
+rings.to_csv("data/rings.csv", index=False)
 
 ohyb = np.arange(40, -1, -10)
 proud = np.array([
@@ -52,20 +57,25 @@ coils_cur = pd.DataFrame(
 
     }
 )
+coils_cur.to_csv("data/coils_cur.csv", index=False)
 
 
 coils_charge = pd.DataFrame(
     {
-        "qm1":qm(proud[0], ohyb, 2000),
-        "qm2":qm(proud[1], ohyb, 3000),
-        "qm3":qm(proud[2], ohyb, 4000),
-        "qm4":qm(proud[3], ohyb, 5000),
+        "qm1":qm(proud[0], ohyb, 2000)*10**(-11),
+        "qm2":qm(proud[1], ohyb, 3000)*10**(-11),
+        "qm3":qm(proud[2], ohyb, 4000)*10**(-11),
+        "qm4":qm(proud[3], ohyb, 5000)*10**(-11),
     }
 )
+qm_all = np.concatenate((qm(proud[0], ohyb, 2000), qm(proud[1], ohyb, 3000), qm(proud[2], ohyb, 4000), qm(proud[3], ohyb, 5000)))
+#print(np.mean(qm_all) * 10**(-11))
+#print(np.std(qm_all) * 10**(-11))
+
+coils_charge = coils_charge.round(3)
+coils_charge.to_csv("data/coils_charge.csv", index=False)
 
 #### Dif circles ####
-d1 = np.array([26, 25, 25, 26, 25, 23])
-d2 = np.array([44, 42, 42, 40, 39, 38])
 
 def lam(V):
     V = np.multiply(V, 1000)
@@ -87,10 +97,13 @@ V = np.arange(4, 5.1, 0.2)
 dif_circle = pd.DataFrame(
     {
         "voltage":V,
-        "d1":d1,
-        "d2":d2,
         "d1_v":d(lam(V), d1)*10**12,
         "d2_v":d(lam(V), d2)*10**12,
     }
 )
-print(dif_circle)
+dif_circle = dif_circle.round(3)
+dif_circle.to_csv("data/dif_circle.csv", index=False)
+print(np.mean(d(lam(V), d1))*10**12)
+print(np.std(d(lam(V), d1))*10**12)
+print(np.mean(d(lam(V), d2))*10**12)
+print(np.std(d(lam(V), d2))*10**12)
