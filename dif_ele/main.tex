@@ -21,11 +21,11 @@
 \vspace{20px}
 \\
 \vspace{20px}
-\large{Comptnův rozptyl} \\
+\large{Difrakce elektronů} \\
 \vspace{60px}
 \end{center}
 \begin{flushleft}
-Datum: 18.10.2023 \\
+Datum: 22.12.2023 \\
 Jmeno: Martin Skok \\
 Obor: Fyzika \\
 Hodnoceni:
@@ -35,6 +35,8 @@ Hodnoceni:
 \begin{itemize}
   \item Změřte specifický náboj elektronu
   \item Ze známé hodnoty elementárního náboje vypočtěte hmotnost elektronu
+  \item Pozorujte difrakci elektronového svazku na stínítku baňky
+  \item Určete vzdálenosti mezi rovinami grafitové difrakční mřížky
 \end{itemize}
 \section{Seznam pomůcek}
 Thompsonova Trubice,
@@ -149,7 +151,10 @@ Aritmetický průměr:
 $$\overline{ \left( \frac{q}{m} \right)} = 1.545288 \cdot 10^{11}$$
 Směrodatná odchylka:
 $$\sigma_{\frac{q}{m}} = 0.083 \cdot 10^{11}$$
-
+\vspace{1em}
+Teď můžeme vypočítat hmotnost elektronu ze známého náboje elektronu
+$$m_{e} = \frac{e}{\frac{q}{m}} = \frac{1.602177 \cdot 10^{(-19)}}{1.545288 \cdot 10^{11}} = 10.3682 \cdot 10^{-31}$$
+$$\sigma_{m_{e}} = 0.019326 \cdot 10^{-31}$$
 \subsection{Difrakce elektronu}
 \csvreader[
 tabular = |c|c|c|,
@@ -181,11 +186,32 @@ late after line = \\\hline
 \\
 \vspace{1em}
 \\
-$$\overline{d_1} = 196.862 \cdot 10^(12)$$
-$$\sigma_{d_1} = 6.295 \cdot 10^(12)$$
-$$\overline{d_2} = 119.327 \cdot 10^(12)$$
-$$\sigma_{d_2} = 1.843 \cdot 10^(12)$$
-\section{}
-\section{}
-\section{}
+$$\overline{d_1} = 196.862 \cdot 10^{12}$$
+$$\sigma_{d_1} = 6.295 \cdot 10^{12}$$
+$$\overline{d_2} = 119.327 \cdot 10^{12}$$
+$$\sigma_{d_2} = 1.843 \cdot 10^{12}$$
+\section{Diskuse}
+Úkolem bylo určit specifický náboj a následně hmostnost elektronu.
+Potom jsem měl určit vzdálenosti rovin v krystalové mřížce.
+Výsledné hodnoty se od tabulkových lišil i mimo rozsah chyb. \cite{r:qm} \cite{r:em} \\
+Chyby mohly být způsobeny nepřesným změřeným vzdáleností pomocí posuvného měřítka.
+Taky elektronové svazky které jsem pozoroval a pak odečítal na stupnici bylo velmi nepřesné.
+Činil jsem tak pouze svým okem a mím ''smyslem o přesnosti''.
+\section{Závěr}
+Naměřené hodnoty:\\
+Specifiký náboj
+$$\frac{q}{m} = (1.545 \pm 0.083) \cdot 10^{11} \left[ \frac{C}{kg} \right]$$
+Hmotnost elektronu
+$$m_{e} = (10.368 \pm 0.019) \cdot 10^{-31} [kg]$$
+vzdálenost rovin krystalové mřížky grafitu
+$$d_{1} = (196.862 \pm 6.295) \cdot 10^{12} [m]$$
+$$d_{2} = (119.327 \pm 1.843) \cdot 10^{12} [m]$$
+\begin{thebibliography}{1}
+  \bibitem{r:qm}
+  \url{https://en.wikipedia.org/wiki/Mass-to-charge_ratio}
+  \bibitem{r:em}
+  \url{https://en.wikipedia.org/wiki/Electron_mass}
+  \bibitem{r:hc}
+  \url{https://virtuelle-experimente.de/en/b-feld/b-feld/versuchsaufbau.php}
+\end{thebibliography}
 \end{document}
