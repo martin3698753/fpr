@@ -1,0 +1,4013 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mcadata xmlns="http://www.canberra.com/mcaanywhair">
+<input>1</input>
+<group>1</group>
+<devicetype>3</devicetype>
+<presetunits>1</presetunits>
+<parameter code="39" value="0" name="Preset Live Time (s)" input="1"/>
+<parameter code="40" value="600" name="Preset Real Time (s)" input="1"/>
+<parameter code="38" value="2" name="Time Preset Options" input="1"/>
+<parameter code="38" value="2" name="Computational Preset Options" input="1"/>
+<parameter code="41" value="1" name="Computational Preset Start Channel" input="1"/>
+<parameter code="42" value="2048" name="Computational Preset End Channel" input="1"/>
+<parameter code="60" value="0" name="Acquisition Mode" input="1"/>
+<parameter code="305" value="0" name="List mode acquisition options" input="1"/>
+<parameter code="61" value="2048" name="Status" input="1"/>
+<parameter code="73" value="1" name="Spare" input="1"/>
+<parameter code="62" value="0" name="Computational Preset Limit" input="1"/>
+<parameter code="284" value="32770" name="listBufferSize" input="-1"/>
+<parameter code="158" value="850.031005859375" name="HV Voltage (V)" input="1"/>
+<parameter code="161" value="true" name="Voltage On" input="1"/>
+<parameter code="165" value="false" name="Voltage Fault State" input="1"/>
+<parameter code="162" value="true" name="Voltage Inhibit Control On" input="1"/>
+<parameter code="163" value="0" name="Inhibit Polarity" input="1"/>
+<parameter code="167" value="1300" name="HV Limit (V)" input="1"/>
+<parameter code="160" value="0" name="Polarity" input="1"/>
+<parameter code="159" value="1300" name="HV Range (V)" input="1"/>
+<parameter code="166" value="850" name="HV Reading (V)" input="1"/>
+<parameter code="164" value="false" name="Voltage Ramping State" input="1"/>
+<parameter code="218" value="1" name="Stabilizer Gain Correction Range" input="1"/>
+<parameter code="219" value="0" name="Stabilizer Gain Mode" input="1"/>
+<parameter code="221" value="0" name="Stabilizer Gain Divider" input="1"/>
+<parameter code="222" value="10" name="Stabilizer Spacing" input="1"/>
+<parameter code="223" value="4" name="Stabilizer Window" input="1"/>
+<parameter code="224" value="0" name="Stabilizer Ratio Mode" input="1"/>
+<parameter code="226" value="1" name="Stabilizer Manual Ratio" input="1"/>
+<parameter code="227" value="2" name="Stabilizer Centroid" input="1"/>
+<parameter code="225" value="0" name="Stabilizer Correction Value" input="1"/>
+<parameter code="220" value="0" name="Stabilizer Status" input="1"/>
+<parameter code="195" value="1" name="Flat Top (μs)" input="1"/>
+<parameter code="194" value="1" name="Rise Time (μs)" input="1"/>
+<parameter code="237" value="0" name="Fast Discriminator Shaping" input="1"/>
+<parameter code="238" value="0" name="Fast Discriminator Mode" input="1"/>
+<parameter code="239" value="1" name="Manual Fast discriminator" input="1"/>
+<parameter code="235" value="0" name="BLR Mode" input="1"/>
+<parameter code="243" value="11" name="PUR Guard" input="1"/>
+<parameter code="244" value="500" name="LT Trim" input="1"/>
+<parameter code="245" value="1" name="PUR LTC Mode" input="1"/>
+<parameter code="289" value="0" name="Pole Zero" input="1"/>
+<parameter code="157" value="0" name="Manual Pole Zero" input="1"/>
+<parameter code="200" value="0" name="Pole Zero Status" input="1"/>
+<parameter code="70" value="2048" name="Conversion Gain" input="1"/>
+<parameter code="155" value="false" name="Attenuate" input="1"/>
+<parameter code="154" value="4" name="Coarse Gain" input="1"/>
+<parameter code="145" value="1.5" name="Fine Gain" input="1"/>
+<parameter code="241" value="0.10000000149011612" name="LLD %" input="1"/>
+<parameter code="242" value="100" name="ULD %" input="1"/>
+<parameter code="240" value="0" name="LLD Mode" input="1"/>
+<parameter code="246" value="1" name="Polarity" input="1"/>
+<parameter code="250" value="0" name="TRP Gate Polarity" input="1"/>
+<parameter code="249" value="10" name="TRP Inhibit (μs)" input="1"/>
+<parameter code="248" value="0" name="TRP Inhibit Mode" input="1"/>
+<parameter code="236" value="0" name="Preamp Type" input="1"/>
+<parameter code="231" value="0" name="Digital Offset" input="1"/>
+<parameter code="254" value="19" name="GPIO1 Control" input="1"/>
+<parameter code="255" value="0" name="GPIO2 Control" input="1"/>
+<parameter code="256" value="0" name="GPIO3 Control" input="1"/>
+<parameter code="211" value="0" name="Auxiliary Counters Clock Source" input="1"/>
+<parameter code="208" value="0" name="Auxiliary Counters Gate Timer (μs)" input="1"/>
+<parameter code="212" value="100" name="Auxiliary Counters Preset Limit (ms)" input="1"/>
+<parameter code="253" value="false" name="Enable" input="1"/>
+<parameter code="213" value="0" name="Auxiliary Counters Mode" input="1"/>
+<parameter code="319" value="16" name="Auxiliary Counters Buffer Size" input="1"/>
+<parameter code="251" value="0" name="Sample Changer Advance Polarity" input="1"/>
+<parameter code="270" value="false" name="Sample Changer ready state" input="1"/>
+<parameter code="252" value="0" name="Sample Changer Ready Polarity" input="1"/>
+<parameter code="323" value="0" name="SCA Clock Source" input="1"/>
+<parameter code="310" value="2" name="SCA Preset Options" input="1"/>
+<parameter code="309" value="100" name="SCA Preset Limit (ms)" input="1"/>
+<parameter code="312" value="false" name="SCA Enable" input="1"/>
+<parameter code="311" value="0" name="SCA Mode" input="1"/>
+<parameter code="320" value="16" name="SCA Buffer Size" input="1"/>
+<parameter code="264" value="0" name="External Synchronization Mode" input="1"/>
+<parameter code="267" value="0" name="External Synchronization Polarity" input="1"/>
+<parameter code="265" value="1000" name="External Synchronization Pulse (ms)" input="1"/>
+<parameter code="263" value="0" name="External Synchronization Status" input="1"/>
+<parameter code="266" value="0" name="External Synchronization Timeout (ms)" input="1"/>
+<parameter code="217" value="0" name="Coincidence Gate Delay (μs)" input="1"/>
+<parameter code="215" value="0" name="Coincidence Gate Options" input="1"/>
+<parameter code="216" value="0" name="Coincidence Gate Polarity" input="1"/>
+<parameter code="234" value="0" name="MCS External Control" input="1"/>
+<parameter code="232" value="0" name="PHA External Control Mode" input="1"/>
+<parameter code="233" value="0" name="PHA External Control Polarity" input="1"/>
+<parameter code="203" value="1.04.1405.22.00" name="Firmware Version" input="0"/>
+<parameter code="80" value="13002317" name="Serial Number" input="0"/>
+<parameter code="293" value="0349" name="FPGA Version" input="0"/>
+<parameter code="304" value="00-00-AF-02-1A-B2" name="Ethernet MAC Address" input="0"/>
+<parameter code="269" value="0.0.0.0" name="Ethernet Assigned IP Address" input="0"/>
+<parameter code="13" value="10.0.0.3" name="Ethernet IP Address" input="0"/>
+<parameter code="15" value="10.0.0.3" name="Ethernet Gateway" input="0"/>
+<parameter code="16" value="255.255.255.0" name="Ethernet Subnet" input="0"/>
+<parameter code="14" value="false" name="Ethernet DHCP Enable" input="0"/>
+<parameter code="303" value="00-00-AF-02-1A-B3" name="CDC Ethernet MAC Address" input="0"/>
+<parameter code="78" value="10.0.1.4" name="CDC Ethernet Assigned IP Address" input="0"/>
+<parameter code="78" value="10.0.1.4" name="CDC Ethernet IP Address" input="0"/>
+<parameter code="76" value="10.0.1.4" name="CDC Ethernet Gateway" input="0"/>
+<parameter code="77" value="255.255.255.0" name="CDC Ethernet Subnet" input="0"/>
+<parameter code="10" value="Osprey" name="UPnP Friendly Name" input="0"/>
+<parameter code="83" value="5" name="UPnP TTL" input="0"/>
+<parameter code="84" value="true" name="UPnP Enable" input="0"/>
+<parameter code="86" value="true" name="Web Server Enable" input="0"/>
+<parameter code="123" value="true" name="FTP Enable" input="0"/>
+<parameter code="81" value="Canberra Osprey MCA" name="Detector Name" input="0"/>
+<parameter code="175" value="0" name="Signal Mask" input="1"/>
+<parameter code="94" value="0" name="Capture Interval (s)" input="1"/>
+<parameter code="189" value="false" name="Data Available State" input="1"/>
+<parameter code="190" value="false" name="Excessive Pileup State" input="1"/>
+<parameter code="97" value="0" name="Number of Samples before Trigger Event" input="1"/>
+<parameter code="98" value="0" name="Number of Samples after Trigger Event" input="1"/>
+<parameter code="204" value="0" name="Resolution" input="1"/>
+<parameter code="191" value="0" name="Sample Count" input="1"/>
+<parameter code="188" value="false" name="Triggered" input="1"/>
+<parameter code="99" value="0" name="DSO Source" input="1"/>
+<parameter code="172" value="2" name="Trigger Mode" input="1"/>
+<parameter code="174" value="0" name="Pileup Reject" input="1"/>
+<parameter code="171" value="0" name="Number of Samples to Average" input="1"/>
+<parameter code="100" value="1" name="DSO  Slope" input="1"/>
+<parameter code="49" value="0" name="Energy cal. Offset" input="-1"/>
+<parameter code="50" value="0.43199265003204346" name="Energy cal. Slope" input="-1"/>
+<parameter code="51" value="0" name="Energy cal. Quadratic" input="-1"/>
+<parameter code="57" value="0" name="FWHM cal. Model" input="-1"/>
+<parameter code="52" value="0" name="FWHM cal. Offset" input="-1"/>
+<parameter code="53" value="1.6470329761505127" name="FWHM cal. Slope" input="-1"/>
+<parameter code="54" value="0" name="FWHM cal. Offset" input="-1"/>
+<parameter code="55" value="0.06402826309204102" name="FWHM cal. Slope" input="-1"/>
+<parameter code="56" value="0" name="FWHM cal. Quadratic" input="-1"/>
+<parameter code="58" value="0" name="Low tail cal. offset" input="-1"/>
+<parameter code="59" value="0" name="Low tail cal. slope" input="-1"/>
+<parameter code="0" value="" name="Detector Name" input="0"/>
+<parameter code="1" value="" name="Detector Description" input="0"/>
+<parameter code="2" value="50st" name="Sample Name" input="0"/>
+<parameter code="3" value="Cs137" name="Sample Description" input="0"/>
+<parameter code="187" value="0.009999999776482582" name="MCS Dwell Time (s)" input="2"/>
+<parameter code="63" value="1000" name="Preset Sweeps" input="2"/>
+<parameter code="38" value="4" name="MCS Preset Options" input="2"/>
+<parameter code="205" value="0" name="MCS Discriminator Options" input="2"/>
+<parameter code="206" value="1" name="MCS Discriminator Start Channel" input="2"/>
+<parameter code="207" value="2048" name="MCS Discriminator End Channel." input="2"/>
+<parameter code="275" value="0" name="MCS External Channel Advance Polarity" input="2"/>
+<parameter code="277" value="0" name="MCS External Sweep Advance Polarity" input="2"/>
+<parameter code="276" value="0" name="MCS Sweep Advance Mode" input="2"/>
+<parameter code="274" value="0" name="MCS Channel Advance Mode" input="2"/>
+<parameter code="61" value="0" name="Status" input="2"/>
+<parameter code="230" value="0" name="MCS External Control" input="2"/>
+<parameter code="228" value="0" name="MCS External Control Mode" input="2"/>
+<parameter code="229" value="0" name="MCS External Control Polarity" input="2"/>
+<parameter code="70" value="2048" name="Conversion Gain" input="2"/>
+<sca lld="0" uld="100" />
+<sca lld="0" uld="100" />
+<sca lld="0" uld="100" />
+<sca lld="0" uld="100" />
+<sca lld="0" uld="100" />
+<sca lld="0" uld="100" />
+<spectrum start="Sat Nov 22 10:39:43 GMT+0100 2014" start_time_ms="1416649183898" elapsed_deadtime="0.32659016666665747" elapsed_real="600" elapsed_live="598.040459" elapsed_comp_cnts="0" elapsed_comp_start_chan="1" elapsed_comp_end_chan="2048" status="2048" units="sec">0, 0, 0, 0, 0, 0, 1, 50, 102, 78, 106, 99, 107, 79, 112, 98, 93, 92, 87, 75, 88, 71, 82, 85, 82, 85, 104, 86, 99, 110, 98, 87, 97, 83, 88, 108, 88, 85, 98, 96, 93, 90, 90, 89, 104, 80, 91, 81, 85, 107, 107, 102, 98, 105, 96, 89, 94, 91, 84, 97, 108, 106, 108, 102, 100, 96, 105, 106, 94, 128, 104, 102, 138, 101, 103, 104, 120, 91, 128, 109, 94, 99, 100, 114, 112, 95, 116, 92, 86, 96, 90, 104, 119, 129, 107, 125, 115, 105, 122, 117, 95, 114, 100, 117, 112, 116, 132, 118, 134, 120, 147, 144, 148, 141, 126, 152, 132, 116, 120, 123, 137, 137, 119, 133, 140, 133, 129, 123, 125, 125, 99, 121, 115, 134, 107, 145, 117, 137, 108, 116, 133, 127, 119, 120, 110, 125, 117, 133, 135, 130, 123, 120, 113, 127, 114, 140, 142, 138, 129, 145, 147, 140, 129, 148, 150, 146, 165, 139, 155, 142, 147, 164, 166, 164, 179, 222, 212, 210, 230, 234, 240, 255, 249, 264, 314, 296, 294, 311, 340, 344, 339, 363, 311, 312, 329, 337, 295, 324, 274, 255, 318, 263, 254, 221, 248, 250, 217, 189, 232, 200, 225, 207, 227, 234, 202, 223, 225, 219, 223, 195, 237, 223, 204, 215, 188, 195, 162, 199, 167, 168, 175, 174, 167, 141, 159, 159, 165, 182, 152, 165, 140, 145, 157, 165, 146, 167, 155, 164, 151, 154, 157, 160, 152, 178, 162, 153, 167, 162, 148, 149, 136, 167, 159, 155, 153, 167, 145, 167, 155, 162, 154, 169, 183, 152, 166, 157, 164, 188, 158, 176, 175, 163, 191, 158, 159, 177, 177, 180, 186, 167, 165, 154, 193, 194, 168, 172, 172, 170, 163, 180, 205, 168, 182, 196, 155, 168, 153, 185, 189, 182, 181, 168, 143, 141, 140, 185, 147, 151, 183, 136, 142, 147, 169, 177, 140, 163, 178, 182, 183, 164, 176, 194, 170, 161, 172, 181, 171, 146, 182, 152, 170, 176, 153, 166, 166, 165, 160, 176, 150, 168, 168, 159, 165, 157, 154, 156, 191, 153, 151, 149, 145, 181, 142, 189, 166, 160, 165, 176, 177, 157, 153, 160, 149, 156, 151, 141, 157, 141, 153, 172, 165, 177, 182, 164, 146, 143, 168, 140, 167, 160, 155, 152, 148, 170, 161, 156, 172, 180, 171, 159, 157, 144, 157, 157, 159, 155, 145, 167, 176, 173, 178, 177, 171, 175, 164, 148, 165, 166, 142, 152, 187, 157, 167, 178, 156, 163, 178, 145, 169, 160, 157, 180, 177, 143, 164, 181, 158, 146, 161, 135, 164, 148, 153, 156, 166, 153, 165, 172, 155, 166, 155, 157, 168, 151, 133, 138, 155, 152, 162, 164, 160, 141, 134, 156, 157, 152, 150, 168, 142, 131, 151, 150, 162, 142, 176, 142, 153, 151, 152, 120, 154, 136, 132, 149, 151, 137, 169, 131, 152, 146, 143, 142, 156, 151, 160, 148, 140, 138, 147, 150, 147, 122, 138, 128, 151, 138, 139, 153, 141, 159, 138, 158, 137, 146, 160, 148, 140, 161, 143, 144, 145, 147, 137, 123, 145, 128, 163, 141, 143, 133, 125, 133, 146, 144, 155, 158, 135, 145, 140, 143, 143, 139, 125, 116, 128, 133, 149, 144, 137, 132, 143, 135, 130, 134, 142, 114, 123, 110, 120, 166, 146, 141, 121, 135, 130, 128, 118, 148, 151, 124, 129, 147, 132, 131, 130, 166, 142, 132, 133, 124, 116, 130, 141, 136, 126, 131, 123, 131, 124, 142, 119, 129, 134, 121, 135, 128, 137, 119, 143, 133, 113, 134, 113, 112, 124, 134, 136, 123, 134, 132, 124, 123, 113, 141, 128, 147, 144, 146, 136, 143, 149, 145, 105, 114, 140, 131, 147, 120, 109, 111, 117, 120, 103, 132, 136, 137, 120, 118, 100, 119, 118, 111, 123, 116, 126, 115, 104, 132, 124, 123, 124, 131, 130, 120, 114, 139, 123, 114, 142, 130, 137, 147, 122, 139, 116, 106, 135, 107, 98, 107, 118, 139, 107, 120, 134, 115, 117, 129, 112, 123, 120, 106, 114, 92, 127, 125, 109, 122, 124, 141, 113, 125, 112, 97, 119, 126, 133, 119, 129, 105, 132, 125, 121, 143, 108, 108, 116, 109, 122, 119, 107, 134, 131, 116, 102, 125, 107, 123, 118, 128, 122, 129, 109, 117, 118, 116, 116, 120, 132, 110, 97, 114, 113, 108, 107, 121, 115, 110, 104, 131, 124, 99, 119, 107, 111, 126, 105, 119, 115, 112, 107, 112, 117, 89, 111, 119, 127, 115, 119, 112, 129, 107, 118, 103, 115, 97, 107, 110, 116, 123, 120, 108, 116, 98, 114, 108, 112, 97, 96, 105, 101, 131, 130, 140, 100, 118, 108, 111, 113, 100, 103, 124, 126, 115, 100, 109, 105, 112, 122, 103, 130, 102, 123, 109, 121, 102, 107, 120, 114, 123, 112, 102, 109, 121, 120, 123, 81, 120, 116, 103, 111, 130, 122, 121, 124, 107, 129, 114, 105, 99, 126, 127, 112, 114, 115, 104, 113, 116, 109, 113, 108, 126, 127, 115, 120, 111, 109, 105, 104, 115, 98, 115, 114, 141, 145, 124, 147, 112, 119, 129, 121, 132, 105, 108, 121, 114, 122, 87, 108, 111, 114, 144, 134, 106, 140, 128, 130, 125, 118, 119, 125, 132, 124, 154, 128, 122, 145, 126, 142, 141, 124, 135, 137, 132, 148, 122, 139, 116, 117, 125, 135, 129, 124, 126, 137, 125, 146, 168, 150, 159, 159, 160, 151, 127, 164, 156, 123, 162, 145, 161, 137, 129, 138, 140, 164, 154, 172, 164, 148, 170, 193, 133, 178, 152, 151, 162, 174, 160, 171, 173, 178, 185, 170, 177, 175, 173, 152, 206, 142, 159, 152, 148, 141, 176, 188, 201, 158, 182, 167, 163, 171, 177, 203, 168, 221, 178, 207, 186, 192, 199, 190, 170, 203, 201, 200, 189, 226, 185, 204, 172, 182, 187, 247, 205, 216, 179, 207, 196, 202, 188, 196, 199, 224, 211, 216, 210, 237, 220, 222, 240, 222, 223, 214, 227, 180, 240, 195, 226, 236, 243, 232, 214, 207, 204, 216, 229, 222, 232, 212, 236, 243, 213, 209, 208, 211, 244, 233, 235, 233, 221, 218, 233, 248, 243, 235, 229, 208, 244, 221, 267, 268, 241, 231, 245, 246, 234, 203, 258, 214, 227, 237, 245, 220, 226, 242, 251, 252, 241, 243, 189, 218, 238, 205, 221, 211, 221, 223, 212, 216, 219, 241, 212, 233, 247, 221, 203, 220, 217, 218, 213, 235, 216, 248, 218, 205, 200, 214, 218, 218, 194, 203, 211, 197, 224, 212, 232, 229, 199, 221, 208, 238, 197, 236, 202, 174, 221, 181, 196, 206, 201, 209, 186, 223, 168, 195, 207, 201, 191, 191, 190, 182, 180, 192, 183, 180, 181, 175, 199, 188, 194, 201, 187, 181, 176, 195, 180, 176, 170, 186, 188, 178, 181, 193, 190, 209, 188, 146, 179, 153, 212, 179, 186, 167, 170, 182, 162, 159, 173, 171, 182, 162, 177, 162, 165, 141, 169, 182, 154, 178, 171, 145, 151, 170, 162, 164, 156, 171, 176, 150, 178, 180, 151, 145, 125, 139, 147, 157, 145, 152, 162, 172, 138, 152, 117, 144, 148, 155, 140, 150, 161, 132, 143, 156, 166, 156, 132, 144, 129, 163, 160, 170, 131, 130, 163, 124, 151, 153, 113, 137, 147, 124, 145, 151, 140, 129, 129, 166, 171, 174, 158, 144, 160, 121, 137, 164, 154, 147, 153, 154, 129, 124, 133, 148, 118, 150, 140, 159, 155, 141, 145, 146, 140, 106, 138, 131, 126, 124, 136, 142, 137, 132, 132, 132, 107, 128, 121, 137, 135, 118, 124, 120, 116, 123, 122, 118, 116, 132, 140, 125, 150, 115, 126, 129, 125, 108, 134, 91, 118, 131, 110, 113, 136, 118, 124, 137, 126, 102, 109, 114, 116, 107, 125, 107, 122, 103, 128, 120, 104, 98, 105, 110, 85, 114, 120, 106, 114, 97, 98, 108, 107, 105, 91, 106, 98, 93, 93, 104, 88, 90, 87, 91, 86, 86, 96, 97, 92, 93, 95, 104, 81, 92, 99, 94, 87, 82, 94, 96, 86, 85, 93, 95, 85, 92, 77, 95, 93, 87, 81, 92, 79, 71, 85, 82, 85, 79, 84, 81, 76, 82, 91, 88, 88, 81, 78, 88, 77, 68, 84, 90, 69, 70, 76, 75, 70, 90, 94, 96, 75, 77, 82, 77, 60, 72, 85, 83, 84, 90, 80, 74, 62, 90, 87, 76, 65, 75, 86, 64, 73, 102, 85, 87, 83, 74, 73, 79, 76, 76, 75, 85, 76, 94, 86, 82, 91, 88, 85, 85, 75, 80, 92, 92, 100, 98, 71, 84, 83, 102, 88, 72, 89, 86, 98, 109, 88, 100, 126, 83, 106, 97, 122, 119, 105, 127, 107, 117, 104, 124, 116, 110, 128, 130, 126, 127, 137, 99, 143, 114, 134, 128, 120, 155, 117, 152, 146, 145, 115, 151, 155, 141, 160, 156, 144, 176, 151, 167, 154, 156, 155, 168, 169, 174, 190, 161, 181, 157, 179, 149, 161, 174, 167, 186, 185, 163, 161, 199, 162, 206, 163, 176, 168, 177, 175, 167, 170, 175, 194, 172, 194, 161, 167, 176, 171, 166, 166, 145, 166, 144, 158, 164, 154, 150, 148, 136, 166, 149, 134, 143, 155, 141, 151, 116, 137, 123, 124, 125, 103, 127, 104, 126, 111, 116, 112, 124, 117, 106, 111, 108, 120, 90, 99, 72, 95, 90, 89, 67, 80, 65, 63, 59, 61, 68, 70, 47, 51, 54, 65, 50, 57, 49, 50, 49, 44, 39, 52, 23, 22, 33, 23, 33, 29, 35, 35, 34, 25, 18, 26, 28, 23, 26, 15, 18, 20, 23, 16, 15, 17, 8, 14, 15, 8, 12, 12, 14, 11, 6, 13, 2, 6, 7, 6, 8, 4, 11, 7, 5, 10, 7, 8, 9, 8, 6, 7, 7, 7, 4, 3, 2, 5, 2, 5, 3, 2, 3, 7, 4, 2, 4, 3, 6, 7, 7, 4, 5, 5, 2, 5, 3, 7, 2, 4, 4, 1, 4, 3, 4, 6, 4, 6, 8, 4, 4, 4, 5, 6, 7, 6, 3, 4, 3, 2, 6, 3, 5, 2, 5, 5, 6, 3, 3, 5, 3, 8, 4, 5, 4, 3, 4, 6, 4, 5, 3, 1, 3, 4, 0, 7, 4, 2, 3, 5, 5, 1, 4, 9, 3, 7, 3, 3, 4, 4, 7, 2, 6, 5, 4, 1, 3, 5, 5, 7, 3, 5, 7, 5, 4, 5, 4, 7, 9, 8, 4, 7, 5, 3, 1, 1, 4, 3, 6, 9, 4, 5, 5, 4, 4, 3, 4, 7, 4, 5, 3, 4, 5, 6, 2, 3, 3, 5, 1, 3, 1, 2, 7, 5, 4, 2, 5, 5, 6, 5, 5, 4, 4, 7, 4, 6, 4, 8, 2, 3, 1, 2, 5, 4, 3, 4, 7, 2, 3, 5, 5, 6, 5, 3, 9, 6, 4, 5, 4, 2, 2, 4, 2, 3, 3, 4, 4, 1, 3, 4, 3, 5, 3, 5, 4, 3, 3, 5, 3, 6, 7, 2, 5, 3, 2, 6, 2, 4, 0, 4, 0, 0, 3, 4, 3, 1, 5, 9, 1, 6, 5, 1, 8, 2, 3, 2, 4, 8, 3, 3, 3, 6, 2, 6, 5, 4, 2, 1, 0, 3, 4, 3, 2, 8, 3, 4, 4, 4, 2, 6, 5, 3, 5, 2, 5, 1, 4, 2, 6, 4, 4, 7, 5, 2, 4, 2, 6, 7, 2, 3, 3, 0, 3, 1, 3, 8, 0, 4, 5, 6, 2, 2, 8, 4, 4, 3, 4, 6, 2, 2, 3, 4, 4, 2, 3, 3, 3, 4, 3, 5, 7, 3, 1, 4, 8, 4, 6, 4, 1, 1, 8, 9, 4, 9, 6, 4, 6, 5, 4, 8, 2, 5, 1, 5, 4, 3, 2, 5, 5, 4, 5, 1, 2, 3, 6, 3, 3, 5, 5, 3, 5, 4, 5, 4, 3, 1, 4, 5, 4, 3, 12, 4, 3, 1, 3, 4, 3, 1, 4, 5, 4, 4, 4, 6, 6, 8, 3, 6, 5, 1, 1, 6, 8, 3, 6, 4, 3, 6, 2, 7, 2, 4, 3, 3, 3, 3, 3, 4, 5, 4, 4, 5, 3, 1, 3, 3, 4, 2, 3, 7, 4, 1, 8, 4, 3, 2, 4, 5, 4, 3, 3, 5, 3, 4, 3, 4, 1, 2</spectrum>
+<display_region start="1300" end="1365" type="1" />
+<display_region start="843" end="1381" type="1" />
+<list_data>
+</list_data>
+<dso_buffer_data time="Sat Nov 22 09:10:25 GMT+0100 2014" start_time_ms="1416643825881" analog_signals="0" average_sweeps="0" capture_interval="0" flags="0" sample_rate="0" >
+<trigger_information level="0" mode="0" num_pre_trigger_samples="0" num_post_trigger_samples="0" slope="0" source="0" />
+</dso_buffer_data>
+<sca_buffer_data>
+</sca_buffer_data>
+<counter_buffer_data>
+</counter_buffer_data>
+<calibration_settings continuum_type="2" number_of="8" units="0">
+</calibration_settings>
+<calibration_details type="energy">
+<point x="1531.7390726779208" x_uncertainty="0.03650992874483396" y="661.7" y_uncertainty="0" />
+<model type="polynomial" chi_square="0" is_default="true"><coefficient value="0" /><coefficient value="0.43199265003204346" /><coefficient value="0" /><covariance>
+<element row="0" column="0" value="1" />
+<element row="0" column="1" value="-0.0006528527069899132" />
+<element row="1" column="0" value="-0.0006528527069899132" />
+<element row="1" column="1" value="4.26322681241792e-7" />
+</covariance>
+</model>
+</calibration_details>
+<calibration_details type="fwhm">
+<point x="661.7" x_uncertainty="0" y="98.07459062789455" y_uncertainty="0.0645490283664891" />
+<model type="polynomial" chi_square="0" is_default="false"><coefficient value="0" /><coefficient value="0.06402826309204102" /><coefficient value="0" /><covariance>
+</covariance>
+</model>
+<model type="square_root" chi_square="0" is_default="true"><coefficient value="0" /><coefficient value="1.6470329761505127" /><covariance>
+</covariance>
+</model>
+</calibration_details>
+<calibration_details type="low_energy_tail">
+<point x="661.7" x_uncertainty="0" y="0" y_uncertainty="0" />
+<model type="polynomial" chi_square="0" is_default="true"><coefficient value="0" /><coefficient value="0" /><covariance>
+</covariance>
+</model>
+</calibration_details>
+<analysis_settings>
+<tentative_nid search_sensitivity="3" search_tol="0.25" search_tol_units="1">
+<continuum type="2" number_of="0.2" units="1"/>
+<library name="stdlib.nl" description="Prospect Master Nuclide Library">
+<nuclide name="Annihil.">
+<halflife units="sec">
+<value>0</value>
+<uncertainty>0</uncertainty>
+</halflife>
+<line>
+<energy units="keV">
+<value>511</value>
+<uncertainty>0</uncertainty>
+</energy>
+</line>
+</nuclide>
+<nuclide name="BE-7">
+<halflife units="sec">
+<value>53.22</value>
+<uncertainty>0.06</uncertainty>
+</halflife>
+<line>
+<energy units="keV">
+<value>477.6035</value>
+<uncertainty>0.002</uncertainty>
+</energy>
+</line>
+</nuclide>
+<nuclide name="NA-22">
+<halflife units="sec">
+<value>2.6027</value>
+<uncertainty>0.001</uncertainty>
+</halflife>
+<line>
+<energy units="keV">
+<value>1274.537</value>
+<uncertainty>0.007</uncertainty>
+</energy>
+</line>
+</nuclide>
+<nuclide name="NA-24">
+<halflife units="sec">
+<value>14.997</value>
+<uncertainty>0.012</uncertainty>
+</halflife>
+<line>
+<energy units="keV">
+<value>1368.626</value>
+<uncertainty>0.005</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>2754.007</value>
+<uncertainty>0.011</uncertainty>
+</energy>
+</line>
+</nuclide>
+<nuclide name="CL-38">
+<halflife units="sec">
+<value>37.23</value>
+<uncertainty>0.014</uncertainty>
+</halflife>
+<line>
+<energy units="keV">
+<value>1642.43</value>
+<uncertainty>0.08</uncertainty>
+</energy>
+</line>
+</nuclide>
+<nuclide name="K-40">
+<halflife units="sec">
+<value>1248000000</value>
+<uncertainty>3000000</uncertainty>
+</halflife>
+<line>
+<energy units="keV">
+<value>1460.822</value>
+<uncertainty>0.006</uncertainty>
+</energy>
+</line>
+</nuclide>
+<nuclide name="AR-41">
+<halflife units="sec">
+<value>109.61</value>
+<uncertainty>0.04</uncertainty>
+</halflife>
+<line>
+<energy units="keV">
+<value>1293.64</value>
+<uncertainty>0.04</uncertainty>
+</energy>
+</line>
+</nuclide>
+<nuclide name="K-42">
+<halflife units="sec">
+<value>12.36</value>
+<uncertainty>0.012</uncertainty>
+</halflife>
+<line>
+<energy units="keV">
+<value>1524.6</value>
+<uncertainty>0.3</uncertainty>
+</energy>
+</line>
+</nuclide>
+<nuclide name="SC-46">
+<halflife units="sec">
+<value>83.79</value>
+<uncertainty>0.04</uncertainty>
+</halflife>
+<line>
+<energy units="keV">
+<value>889.277</value>
+<uncertainty>0.003</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>1120.545</value>
+<uncertainty>0.004</uncertainty>
+</energy>
+</line>
+</nuclide>
+<nuclide name="CR-51">
+<halflife units="sec">
+<value>27.701</value>
+<uncertainty>0.0011</uncertainty>
+</halflife>
+<line>
+<energy units="keV">
+<value>320.0824</value>
+<uncertainty>0.0004</uncertainty>
+</energy>
+</line>
+</nuclide>
+<nuclide name="MN-54">
+<halflife units="sec">
+<value>312.05</value>
+<uncertainty>0.04</uncertainty>
+</halflife>
+<line>
+<energy units="keV">
+<value>834.848</value>
+<uncertainty>0.003</uncertainty>
+</energy>
+</line>
+</nuclide>
+<nuclide name="MN-56">
+<halflife units="sec">
+<value>2.5789</value>
+<uncertainty>0.0001</uncertainty>
+</halflife>
+<line>
+<energy units="keV">
+<value>846.7638</value>
+<uncertainty>0.0019</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>1810.726</value>
+<uncertainty>0.004</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>2113.092</value>
+<uncertainty>0.006</uncertainty>
+</energy>
+</line>
+</nuclide>
+<nuclide name="CO-57">
+<halflife units="sec">
+<value>271.74</value>
+<uncertainty>0.06</uncertainty>
+</halflife>
+<line>
+<energy units="keV">
+<value>122.06065</value>
+<uncertainty>0.00012</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>136.47356</value>
+<uncertainty>0.00029</uncertainty>
+</energy>
+</line>
+</nuclide>
+<nuclide name="CO-58">
+<halflife units="sec">
+<value>70.86</value>
+<uncertainty>0.06</uncertainty>
+</halflife>
+<line>
+<energy units="keV">
+<value>810.7593</value>
+<uncertainty>0.002</uncertainty>
+</energy>
+</line>
+</nuclide>
+<nuclide name="FE-59">
+<halflife units="sec">
+<value>44.495</value>
+<uncertainty>0.009</uncertainty>
+</halflife>
+<line>
+<energy units="keV">
+<value>142.651</value>
+<uncertainty>0.002</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>192.343</value>
+<uncertainty>0.005</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>1099.245</value>
+<uncertainty>0.003</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>1291.59</value>
+<uncertainty>0.006</uncertainty>
+</energy>
+</line>
+</nuclide>
+<nuclide name="CO-60">
+<halflife units="sec">
+<value>1925.28</value>
+<uncertainty>0.14</uncertainty>
+</halflife>
+<line>
+<energy units="keV">
+<value>1173.228</value>
+<uncertainty>0.003</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>1332.492</value>
+<uncertainty>0.004</uncertainty>
+</energy>
+</line>
+</nuclide>
+<nuclide name="CU-64">
+<halflife units="sec">
+<value>12.701</value>
+<uncertainty>0.002</uncertainty>
+</halflife>
+<line>
+<energy units="keV">
+<value>1345.77</value>
+<uncertainty>0.06</uncertainty>
+</energy>
+</line>
+</nuclide>
+<nuclide name="NI-65">
+<halflife units="sec">
+<value>2.51719</value>
+<uncertainty>0.00026</uncertainty>
+</halflife>
+<line>
+<energy units="keV">
+<value>366.27</value>
+<uncertainty>0.03</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>1115.53</value>
+<uncertainty>0.04</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>1481.84</value>
+<uncertainty>0.05</uncertainty>
+</energy>
+</line>
+</nuclide>
+<nuclide name="ZN-65">
+<halflife units="sec">
+<value>243.93</value>
+<uncertainty>0.09</uncertainty>
+</halflife>
+<line>
+<energy units="keV">
+<value>1115.539</value>
+<uncertainty>0.002</uncertainty>
+</energy>
+</line>
+</nuclide>
+<nuclide name="ZN-69M">
+<halflife units="sec">
+<value>13.76</value>
+<uncertainty>0.02</uncertainty>
+</halflife>
+<line>
+<energy units="keV">
+<value>438.634</value>
+<uncertainty>0.018</uncertainty>
+</energy>
+</line>
+</nuclide>
+<nuclide name="SE-75">
+<halflife units="sec">
+<value>119.79</value>
+<uncertainty>0.04</uncertainty>
+</halflife>
+<line>
+<energy units="keV">
+<value>96.734</value>
+<uncertainty>0.0009</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>121.1155</value>
+<uncertainty>0.0011</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>136.0001</value>
+<uncertainty>0.0006</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>198.606</value>
+<uncertainty>0.0012</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>264.6576</value>
+<uncertainty>0.0009</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>279.5422</value>
+<uncertainty>0.001</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>303.9236</value>
+<uncertainty>0.001</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>400.6572</value>
+<uncertainty>0.0008</uncertainty>
+</energy>
+</line>
+</nuclide>
+<nuclide name="AS-76">
+<halflife units="sec">
+<value>26.24</value>
+<uncertainty>0.09</uncertainty>
+</halflife>
+<line>
+<energy units="keV">
+<value>559.1</value>
+<uncertainty>0.05</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>563.23</value>
+<uncertainty>0.05</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>657.05</value>
+<uncertainty>0.05</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>1212.92</value>
+<uncertainty>0.05</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>1216.08</value>
+<uncertainty>0.05</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>1228.52</value>
+<uncertainty>0.05</uncertainty>
+</energy>
+</line>
+</nuclide>
+<nuclide name="BR-82">
+<halflife units="sec">
+<value>35.282</value>
+<uncertainty>0.007</uncertainty>
+</halflife>
+<line>
+<energy units="keV">
+<value>221.48</value>
+<uncertainty>0.002</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>554.348</value>
+<uncertainty>0.002</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>606.3</value>
+<uncertainty>0.1</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>619.106</value>
+<uncertainty>0.004</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>698.374</value>
+<uncertainty>0.005</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>776.517</value>
+<uncertainty>0.003</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>827.828</value>
+<uncertainty>0.006</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>1007.59</value>
+<uncertainty>0.03</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>1044.002</value>
+<uncertainty>0.005</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>1317.473</value>
+<uncertainty>0.01</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>1474.88</value>
+<uncertainty>0.01</uncertainty>
+</energy>
+</line>
+</nuclide>
+<nuclide name="RB-83">
+<halflife units="sec">
+<value>86.2</value>
+<uncertainty>0.1</uncertainty>
+</halflife>
+<line>
+<energy units="keV">
+<value>520.3991</value>
+<uncertainty>0.0005</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>529.5945</value>
+<uncertainty>0.0006</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>552.5512</value>
+<uncertainty>0.0007</uncertainty>
+</energy>
+</line>
+</nuclide>
+<nuclide name="BR-84">
+<halflife units="sec">
+<value>31.76</value>
+<uncertainty>0.08</uncertainty>
+</halflife>
+<line>
+<energy units="keV">
+<value>604.8</value>
+<uncertainty>0.3</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>736.5</value>
+<uncertainty>0.3</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>802.2</value>
+<uncertainty>0.2</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>881.6</value>
+<uncertainty>0.1</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>1015.9</value>
+<uncertainty>0.3</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>1213.3</value>
+<uncertainty>0.2</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>1463.8</value>
+<uncertainty>0.7</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>1741.2</value>
+<uncertainty>0.4</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>1877.5</value>
+<uncertainty>0.4</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>1897.6</value>
+<uncertainty>0.2</uncertainty>
+</energy>
+</line>
+</nuclide>
+<nuclide name="KR-85">
+<halflife units="sec">
+<value>10.756</value>
+<uncertainty>0.018</uncertainty>
+</halflife>
+<line>
+<energy units="keV">
+<value>513.997</value>
+<uncertainty>0.005</uncertainty>
+</energy>
+</line>
+</nuclide>
+<nuclide name="KR-85M">
+<halflife units="sec">
+<value>4.48</value>
+<uncertainty>0.008</uncertainty>
+</halflife>
+<line>
+<energy units="keV">
+<value>151.195</value>
+<uncertainty>0.006</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>304.87</value>
+<uncertainty>0.02</uncertainty>
+</energy>
+</line>
+</nuclide>
+<nuclide name="SR-85">
+<halflife units="sec">
+<value>64.84</value>
+<uncertainty>0.02</uncertainty>
+</halflife>
+<line>
+<energy units="keV">
+<value>514.0067</value>
+<uncertainty>0.0019</uncertainty>
+</energy>
+</line>
+</nuclide>
+<nuclide name="KR-87">
+<halflife units="sec">
+<value>76.3</value>
+<uncertainty>0.5</uncertainty>
+</halflife>
+<line>
+<energy units="keV">
+<value>402.587</value>
+<uncertainty>0.01</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>673.83</value>
+<uncertainty>0.08</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>845.44</value>
+<uncertainty>0.04</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>1175.4</value>
+<uncertainty>0.08</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>1740.52</value>
+<uncertainty>0.08</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>2011.88</value>
+<uncertainty>0.1</uncertainty>
+</energy>
+</line>
+</nuclide>
+<nuclide name="KR-88">
+<halflife units="sec">
+<value>2.84</value>
+<uncertainty>0.03</uncertainty>
+</halflife>
+<line>
+<energy units="keV">
+<value>165.98</value>
+<uncertainty>0.04</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>196.301</value>
+<uncertainty>0.01</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>362.226</value>
+<uncertainty>0.013</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>834.83</value>
+<uncertainty>0.003</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>985.78</value>
+<uncertainty>0.016</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>1141.33</value>
+<uncertainty>0.06</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>1179.51</value>
+<uncertainty>0.03</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>1250.67</value>
+<uncertainty>0.04</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>1369.5</value>
+<uncertainty>0.2</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>1518.39</value>
+<uncertainty>0.03</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>1529.77</value>
+<uncertainty>0.03</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>2029.84</value>
+<uncertainty>0.03</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>2035.411</value>
+<uncertainty>0.018</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>2195.842</value>
+<uncertainty>0.007</uncertainty>
+</energy>
+</line>
+</nuclide>
+<nuclide name="RB-88">
+<halflife units="sec">
+<value>17.773</value>
+<uncertainty>0.011</uncertainty>
+</halflife>
+<line>
+<energy units="keV">
+<value>898.03</value>
+<uncertainty>0.04</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>1836</value>
+<uncertainty>0.05</uncertainty>
+</energy>
+</line>
+</nuclide>
+<nuclide name="Y-88">
+<halflife units="sec">
+<value>106.626</value>
+<uncertainty>0.021</uncertainty>
+</halflife>
+<line>
+<energy units="keV">
+<value>898.042</value>
+<uncertainty>0.003</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>1836.063</value>
+<uncertainty>0.012</uncertainty>
+</energy>
+</line>
+</nuclide>
+<nuclide name="KR-89">
+<halflife units="sec">
+<value>3.15</value>
+<uncertainty>0.04</uncertainty>
+</halflife>
+<line>
+<energy units="keV">
+<value>197.1</value>
+<uncertainty>0.3</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>220.948</value>
+<uncertainty>0.009</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>345.03</value>
+<uncertainty>0.1</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>354.1</value>
+<uncertainty>0.4</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>369.3</value>
+<uncertainty>0.1</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>411.42</value>
+<uncertainty>0.1</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>497.383</value>
+<uncertainty>0.018</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>497.383</value>
+<uncertainty>0.018</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>576.96</value>
+<uncertainty>0.1</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>586.03</value>
+<uncertainty>0.04</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>696.24</value>
+<uncertainty>0.1</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>738.39</value>
+<uncertainty>0.07</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>776.49</value>
+<uncertainty>0.2</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>835.53</value>
+<uncertainty>0.1</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>867.08</value>
+<uncertainty>0.07</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>904.27</value>
+<uncertainty>0.07</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>1107.78</value>
+<uncertainty>0.1</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>1115</value>
+<uncertainty>0.8</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>1273.73</value>
+<uncertainty>0.1</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>1324.28</value>
+<uncertainty>0.07</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>1472.76</value>
+<uncertainty>0.1</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>1500.96</value>
+<uncertainty>0.1</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>1530.04</value>
+<uncertainty>0.15</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>1533.68</value>
+<uncertainty>0.15</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>1692</value>
+<uncertainty>1.2</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>1903.4</value>
+<uncertainty>0.1</uncertainty>
+</energy>
+</line>
+</nuclide>
+<nuclide name="RB-89">
+<halflife units="sec">
+<value>15.15</value>
+<uncertainty>0.12</uncertainty>
+</halflife>
+<line>
+<energy units="keV">
+<value>272.42</value>
+<uncertainty>0.07</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>657.77</value>
+<uncertainty>0.06</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>947.73</value>
+<uncertainty>0.07</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>1031.92</value>
+<uncertainty>0.06</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>1248.14</value>
+<uncertainty>0.06</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>1538.07</value>
+<uncertainty>0.09</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>2007.5</value>
+<uncertainty>0.09</uncertainty>
+</energy>
+</line>
+</nuclide>
+<nuclide name="ZR-89">
+<halflife units="sec">
+<value>78.41</value>
+<uncertainty>0.12</uncertainty>
+</halflife>
+<line>
+<energy units="keV">
+<value>909.15</value>
+<uncertainty>0.15</uncertainty>
+</energy>
+</line>
+</nuclide>
+<nuclide name="MO-90">
+<halflife units="sec">
+<value>5.67</value>
+<uncertainty>0.05</uncertainty>
+</halflife>
+<line>
+<energy units="keV">
+<value>122.37</value>
+<uncertainty>0.022</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>257.34</value>
+<uncertainty>0.04</uncertainty>
+</energy>
+</line>
+</nuclide>
+<nuclide name="SR-92">
+<halflife units="sec">
+<value>2.71</value>
+<uncertainty>0.01</uncertainty>
+</halflife>
+<line>
+<energy units="keV">
+<value>241.56</value>
+<uncertainty>0.05</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>430.49</value>
+<uncertainty>0.03</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>953.31</value>
+<uncertainty>0.07</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>1142.35</value>
+<uncertainty>0.07</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>1383.93</value>
+<uncertainty>0.05</uncertainty>
+</energy>
+</line>
+</nuclide>
+<nuclide name="Y-92">
+<halflife units="sec">
+<value>3.54</value>
+<uncertainty>0.01</uncertainty>
+</halflife>
+<line>
+<energy units="keV">
+<value>448.5</value>
+<uncertainty>0.1</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>561.1</value>
+<uncertainty>0.1</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>844.3</value>
+<uncertainty>0.1</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>934.47</value>
+<uncertainty>0.07</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>1405.4</value>
+<uncertainty>0.1</uncertainty>
+</energy>
+</line>
+</nuclide>
+<nuclide name="SR-93">
+<halflife units="sec">
+<value>7.43</value>
+<uncertainty>0.03</uncertainty>
+</halflife>
+<line>
+<energy units="keV">
+<value>168.499</value>
+<uncertainty>0.004</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>260.12</value>
+<uncertainty>0.05</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>590.238</value>
+<uncertainty>0.023</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>710.312</value>
+<uncertainty>0.017</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>875.73</value>
+<uncertainty>0.06</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>888.13</value>
+<uncertainty>0.05</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>1269.47</value>
+<uncertainty>0.07</uncertainty>
+</energy>
+</line>
+</nuclide>
+<nuclide name="Y-93">
+<halflife units="sec">
+<value>10.18</value>
+<uncertainty>0.08</uncertainty>
+</halflife>
+<line>
+<energy units="keV">
+<value>266.9</value>
+<uncertainty>0.1</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>947.1</value>
+<uncertainty>0.1</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>1917.8</value>
+<uncertainty>0.1</uncertainty>
+</energy>
+</line>
+</nuclide>
+<nuclide name="NB-94">
+<halflife units="sec">
+<value>20300</value>
+<uncertainty>1600</uncertainty>
+</halflife>
+<line>
+<energy units="keV">
+<value>702.65</value>
+<uncertainty>0.06</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>871.091</value>
+<uncertainty>0.018</uncertainty>
+</energy>
+</line>
+</nuclide>
+<nuclide name="Y-94">
+<halflife units="sec">
+<value>18.7</value>
+<uncertainty>0.1</uncertainty>
+</halflife>
+<line>
+<energy units="keV">
+<value>381.6</value>
+<uncertainty>0.2</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>550.9</value>
+<uncertainty>0.1</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>752.6</value>
+<uncertainty>0.1</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>918.74</value>
+<uncertainty>0.05</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>1138.9</value>
+<uncertainty>0.1</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>1671.4</value>
+<uncertainty>0.1</uncertainty>
+</energy>
+</line>
+</nuclide>
+<nuclide name="NB-95">
+<halflife units="sec">
+<value>34.991</value>
+<uncertainty>0.006</uncertainty>
+</halflife>
+<line>
+<energy units="keV">
+<value>765.803</value>
+<uncertainty>0.006</uncertainty>
+</energy>
+</line>
+</nuclide>
+<nuclide name="NB-95M">
+<halflife units="sec">
+<value>3.61</value>
+<uncertainty>0.03</uncertainty>
+</halflife>
+<line>
+<energy units="keV">
+<value>235.69</value>
+<uncertainty>0.02</uncertainty>
+</energy>
+</line>
+</nuclide>
+<nuclide name="ZR-95">
+<halflife units="sec">
+<value>64.032</value>
+<uncertainty>0.006</uncertainty>
+</halflife>
+<line>
+<energy units="keV">
+<value>724.192</value>
+<uncertainty>0.004</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>756.725</value>
+<uncertainty>0.012</uncertainty>
+</energy>
+</line>
+</nuclide>
+<nuclide name="NB-96">
+<halflife units="sec">
+<value>23.35</value>
+<uncertainty>0.05</uncertainty>
+</halflife>
+<line>
+<energy units="keV">
+<value>460.04</value>
+<uncertainty>0.012</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>568.871</value>
+<uncertainty>0.012</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>778.224</value>
+<uncertainty>0.015</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>849.929</value>
+<uncertainty>0.013</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>1091.349</value>
+<uncertainty>0.012</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>1200.231</value>
+<uncertainty>0.013</uncertainty>
+</energy>
+</line>
+</nuclide>
+<nuclide name="TC-96">
+<halflife units="sec">
+<value>4.28</value>
+<uncertainty>0.07</uncertainty>
+</halflife>
+<line>
+<energy units="keV">
+<value>778.22</value>
+<uncertainty>0.04</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>812.54</value>
+<uncertainty>0.04</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>849.86</value>
+<uncertainty>0.04</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>1126.85</value>
+<uncertainty>0.06</uncertainty>
+</energy>
+</line>
+</nuclide>
+<nuclide name="NB-97">
+<halflife units="sec">
+<value>72.1</value>
+<uncertainty>0.7</uncertainty>
+</halflife>
+<line>
+<energy units="keV">
+<value>657.94</value>
+<uncertainty>0.09</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>1024.4</value>
+<uncertainty>0.3</uncertainty>
+</energy>
+</line>
+</nuclide>
+<nuclide name="ZR-97">
+<halflife units="sec">
+<value>16.749</value>
+<uncertainty>0.008</uncertainty>
+</halflife>
+<line>
+<energy units="keV">
+<value>254.17</value>
+<uncertainty>0.14</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>355.4</value>
+<uncertainty>0.09</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>507.64</value>
+<uncertainty>0.08</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>600.6</value>
+<uncertainty>0.6</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>743.36</value>
+<uncertainty>0.03</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>1021.2</value>
+<uncertainty>0.3</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>1147.97</value>
+<uncertainty>0.08</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>1362.68</value>
+<uncertainty>0.09</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>1750.24</value>
+<uncertainty>0.22</uncertainty>
+</energy>
+</line>
+</nuclide>
+<nuclide name="MO-99">
+<halflife units="sec">
+<value>65.976</value>
+<uncertainty>0.024</uncertainty>
+</halflife>
+<line>
+<energy units="keV">
+<value>181.068</value>
+<uncertainty>0.008</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>366.421</value>
+<uncertainty>0.015</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>739.5</value>
+<uncertainty>0.017</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>777.921</value>
+<uncertainty>0.02</uncertainty>
+</energy>
+</line>
+</nuclide>
+<nuclide name="TC-99M">
+<halflife units="sec">
+<value>6.0067</value>
+<uncertainty>0.0005</uncertainty>
+</halflife>
+<line>
+<energy units="keV">
+<value>140.511</value>
+<uncertainty>0.001</uncertainty>
+</energy>
+</line>
+</nuclide>
+<nuclide name="RU-103">
+<halflife units="sec">
+<value>39.247</value>
+<uncertainty>0.003</uncertainty>
+</halflife>
+<line>
+<energy units="keV">
+<value>497.085</value>
+<uncertainty>0.01</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>610.333</value>
+<uncertainty>0.01</uncertainty>
+</energy>
+</line>
+</nuclide>
+<nuclide name="RH-105">
+<halflife units="sec">
+<value>35.36</value>
+<uncertainty>0.06</uncertainty>
+</halflife>
+<line>
+<energy units="keV">
+<value>306.1</value>
+<uncertainty>0.2</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>318.9</value>
+<uncertainty>0.1</uncertainty>
+</energy>
+</line>
+</nuclide>
+<nuclide name="RH-106">
+<halflife units="sec">
+<value>30.07</value>
+<uncertainty>0.35</uncertainty>
+</halflife>
+<line>
+<energy units="keV">
+<value>621.93</value>
+<uncertainty>0.06</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>1050.41</value>
+<uncertainty>0.06</uncertainty>
+</energy>
+</line>
+</nuclide>
+<nuclide name="CD-109">
+<halflife units="sec">
+<value>461.4</value>
+<uncertainty>1.2</uncertainty>
+</halflife>
+<line>
+<energy units="keV">
+<value>88.0336</value>
+<uncertainty>0.0001</uncertainty>
+</energy>
+</line>
+</nuclide>
+<nuclide name="AG-110M">
+<halflife units="sec">
+<value>249.76</value>
+<uncertainty>0.04</uncertainty>
+</halflife>
+<line>
+<energy units="keV">
+<value>446.812</value>
+<uncertainty>0.003</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>620.3553</value>
+<uncertainty>0.0017</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>657.76</value>
+<uncertainty>0.0011</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>677.6217</value>
+<uncertainty>0.0012</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>687.0091</value>
+<uncertainty>0.0018</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>706.676</value>
+<uncertainty>0.0015</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>744.2755</value>
+<uncertainty>0.0018</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>763.9424</value>
+<uncertainty>0.0017</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>818.0244</value>
+<uncertainty>0.0018</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>884.6781</value>
+<uncertainty>0.0013</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>937.485</value>
+<uncertainty>0.003</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>1384.2931</value>
+<uncertainty>0.002</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>1475.7792</value>
+<uncertainty>0.0023</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>1505.028</value>
+<uncertainty>0.002</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>1562.294</value>
+<uncertainty>0.0018</uncertainty>
+</energy>
+</line>
+</nuclide>
+<nuclide name="SN-113">
+<halflife units="sec">
+<value>115.09</value>
+<uncertainty>0.03</uncertainty>
+</halflife>
+<line>
+<energy units="keV">
+<value>255.134</value>
+<uncertainty>0.01</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>391.698</value>
+<uncertainty>0.003</uncertainty>
+</energy>
+</line>
+</nuclide>
+<nuclide name="SB-122">
+<halflife units="sec">
+<value>2.7238</value>
+<uncertainty>0.0002</uncertainty>
+</halflife>
+<line>
+<energy units="keV">
+<value>564.24</value>
+<uncertainty>0.04</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>692.65</value>
+<uncertainty>0.04</uncertainty>
+</energy>
+</line>
+</nuclide>
+<nuclide name="I-124">
+<halflife units="sec">
+<value>4.176</value>
+<uncertainty>0.0003</uncertainty>
+</halflife>
+<line>
+<energy units="keV">
+<value>602.73</value>
+<uncertainty>0.08</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>722.78</value>
+<uncertainty>0.08</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>1509.36</value>
+<uncertainty>0.08</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>1690.96</value>
+<uncertainty>0.08</uncertainty>
+</energy>
+</line>
+</nuclide>
+<nuclide name="SB-124">
+<halflife units="sec">
+<value>60.2</value>
+<uncertainty>0.03</uncertainty>
+</halflife>
+<line>
+<energy units="keV">
+<value>602.726</value>
+<uncertainty>0.0023</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>645.852</value>
+<uncertainty>0.0019</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>709.34</value>
+<uncertainty>0.05</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>713.776</value>
+<uncertainty>0.004</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>722.782</value>
+<uncertainty>0.003</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>968.195</value>
+<uncertainty>0.004</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>1045.125</value>
+<uncertainty>0.004</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>1325.504</value>
+<uncertainty>0.004</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>1355.2</value>
+<uncertainty>0.05</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>1368.157</value>
+<uncertainty>0.005</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>1436.554</value>
+<uncertainty>0.007</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>1690.971</value>
+<uncertainty>0.004</uncertainty>
+</energy>
+</line>
+</nuclide>
+<nuclide name="SB-125">
+<halflife units="sec">
+<value>2.75856</value>
+<uncertainty>0.00025</uncertainty>
+</halflife>
+<line>
+<energy units="keV">
+<value>176.314</value>
+<uncertainty>0.002</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>380.452</value>
+<uncertainty>0.008</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>427.874</value>
+<uncertainty>0.004</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>463.365</value>
+<uncertainty>0.004</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>600.597</value>
+<uncertainty>0.002</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>606.713</value>
+<uncertainty>0.003</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>635.95</value>
+<uncertainty>0.003</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>671.441</value>
+<uncertainty>0.006</uncertainty>
+</energy>
+</line>
+</nuclide>
+<nuclide name="XE-125">
+<halflife units="sec">
+<value>16.9</value>
+<uncertainty>0.2</uncertainty>
+</halflife>
+<line>
+<energy units="keV">
+<value>188.418</value>
+<uncertainty>0.004</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>243.378</value>
+<uncertainty>0.005</uncertainty>
+</energy>
+</line>
+</nuclide>
+<nuclide name="I-126">
+<halflife units="sec">
+<value>12.93</value>
+<uncertainty>0.05</uncertainty>
+</halflife>
+<line>
+<energy units="keV">
+<value>388.633</value>
+<uncertainty>0.011</uncertainty>
+</energy>
+</line>
+</nuclide>
+<nuclide name="SB-126">
+<halflife units="sec">
+<value>12.35</value>
+<uncertainty>0.06</uncertainty>
+</halflife>
+<line>
+<energy units="keV">
+<value>666.5</value>
+<uncertainty>0.3</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>695</value>
+<uncertainty>0.4</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>697</value>
+<uncertainty>0.4</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>720.7</value>
+<uncertainty>0.4</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>856.8</value>
+<uncertainty>0.2</uncertainty>
+</energy>
+</line>
+</nuclide>
+<nuclide name="I-130">
+<halflife units="sec">
+<value>12.36</value>
+<uncertainty>0.01</uncertainty>
+</halflife>
+<line>
+<energy units="keV">
+<value>417.932</value>
+<uncertainty>0.004</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>536.066</value>
+<uncertainty>0.006</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>668.536</value>
+<uncertainty>0.009</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>739.512</value>
+<uncertainty>0.01</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>1157.43</value>
+<uncertainty>0.03</uncertainty>
+</energy>
+</line>
+</nuclide>
+<nuclide name="I-131">
+<halflife units="sec">
+<value>8.0252</value>
+<uncertainty>0.0006</uncertainty>
+</halflife>
+<line>
+<energy units="keV">
+<value>80.185</value>
+<uncertainty>0.002</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>284.305</value>
+<uncertainty>0.005</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>364.489</value>
+<uncertainty>0.005</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>636.989</value>
+<uncertainty>0.004</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>722.911</value>
+<uncertainty>0.005</uncertainty>
+</energy>
+</line>
+</nuclide>
+<nuclide name="XE-131M">
+<halflife units="sec">
+<value>11.84</value>
+<uncertainty>0.04</uncertainty>
+</halflife>
+<line>
+<energy units="keV">
+<value>163.93</value>
+<uncertainty>0.008</uncertainty>
+</energy>
+</line>
+</nuclide>
+<nuclide name="I-132">
+<halflife units="sec">
+<value>2.295</value>
+<uncertainty>0.013</uncertainty>
+</halflife>
+<line>
+<energy units="keV">
+<value>505.79</value>
+<uncertainty>0.03</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>522.65</value>
+<uncertainty>0.09</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>630.19</value>
+<uncertainty>0.02</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>667.714</value>
+<uncertainty>0.002</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>669.8</value>
+<uncertainty>0.2</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>669.8</value>
+<uncertainty>0.2</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>727</value>
+<uncertainty>0.3</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>771.7</value>
+<uncertainty>0</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>812</value>
+<uncertainty>0.2</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>954.55</value>
+<uncertainty>0.09</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>1398.57</value>
+<uncertainty>0.1</uncertainty>
+</energy>
+</line>
+</nuclide>
+<nuclide name="TE-132">
+<halflife units="sec">
+<value>3.204</value>
+<uncertainty>0.013</uncertainty>
+</halflife>
+<line>
+<energy units="keV">
+<value>111.76</value>
+<uncertainty>0.08</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>116.3</value>
+<uncertainty>0.08</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>228.16</value>
+<uncertainty>0.06</uncertainty>
+</energy>
+</line>
+</nuclide>
+<nuclide name="BA-133">
+<halflife units="sec">
+<value>10.551</value>
+<uncertainty>0.011</uncertainty>
+</halflife>
+<line>
+<energy units="keV">
+<value>79.6142</value>
+<uncertainty>0.0012</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>80.9979</value>
+<uncertainty>0.0011</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>276.3989</value>
+<uncertainty>0.0012</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>302.8508</value>
+<uncertainty>0.0005</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>356.0129</value>
+<uncertainty>0.0007</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>383.8485</value>
+<uncertainty>0.0012</uncertainty>
+</energy>
+</line>
+</nuclide>
+<nuclide name="I-133">
+<halflife units="sec">
+<value>20.83</value>
+<uncertainty>0.08</uncertainty>
+</halflife>
+<line>
+<energy units="keV">
+<value>529.872</value>
+<uncertainty>0.003</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>875.329</value>
+<uncertainty>0.005</uncertainty>
+</energy>
+</line>
+</nuclide>
+<nuclide name="XE-133">
+<halflife units="sec">
+<value>5.2475</value>
+<uncertainty>0.0005</uncertainty>
+</halflife>
+<line>
+<energy units="keV">
+<value>79.6142</value>
+<uncertainty>0.0012</uncertainty>
+</energy>
+</line>
+</nuclide>
+<nuclide name="XE-133M">
+<halflife units="sec">
+<value>2.198</value>
+<uncertainty>0.013</uncertainty>
+</halflife>
+<line>
+<energy units="keV">
+<value>233.221</value>
+<uncertainty>0.015</uncertainty>
+</energy>
+</line>
+</nuclide>
+<nuclide name="CS-134">
+<halflife units="sec">
+<value>2.0652</value>
+<uncertainty>0.0004</uncertainty>
+</halflife>
+<line>
+<energy units="keV">
+<value>475.365</value>
+<uncertainty>0.002</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>563.246</value>
+<uncertainty>0.005</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>569.331</value>
+<uncertainty>0.003</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>604.721</value>
+<uncertainty>0.002</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>795.864</value>
+<uncertainty>0.004</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>801.953</value>
+<uncertainty>0.004</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>1038.61</value>
+<uncertainty>0.007</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>1167.968</value>
+<uncertainty>0.005</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>1365.185</value>
+<uncertainty>0.007</uncertainty>
+</energy>
+</line>
+</nuclide>
+<nuclide name="I-134">
+<halflife units="sec">
+<value>52.5</value>
+<uncertainty>0.2</uncertainty>
+</halflife>
+<line>
+<energy units="keV">
+<value>135.399</value>
+<uncertainty>0.022</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>405.451</value>
+<uncertainty>0.02</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>433.35</value>
+<uncertainty>0.03</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>540.825</value>
+<uncertainty>0.025</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>595.362</value>
+<uncertainty>0.02</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>621.79</value>
+<uncertainty>0.025</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>677.34</value>
+<uncertainty>0.03</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>766.68</value>
+<uncertainty>0.04</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>847.025</value>
+<uncertainty>0.025</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>857.29</value>
+<uncertainty>0.03</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>884.09</value>
+<uncertainty>0.025</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>947.86</value>
+<uncertainty>0.04</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>974.67</value>
+<uncertainty>0.04</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>1072.55</value>
+<uncertainty>0.03</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>1136.16</value>
+<uncertainty>0.04</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>1806.84</value>
+<uncertainty>0.04</uncertainty>
+</energy>
+</line>
+</nuclide>
+<nuclide name="I-135">
+<halflife units="sec">
+<value>6.57</value>
+<uncertainty>0.02</uncertainty>
+</halflife>
+<line>
+<energy units="keV">
+<value>220.502</value>
+<uncertainty>0.015</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>288.451</value>
+<uncertainty>0.016</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>417.633</value>
+<uncertainty>0.022</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>546.557</value>
+<uncertainty>0.016</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>836.804</value>
+<uncertainty>0.016</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>971.96</value>
+<uncertainty>0</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>1038.76</value>
+<uncertainty>0.021</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>1101.58</value>
+<uncertainty>0.03</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>1124</value>
+<uncertainty>0.03</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>1131.511</value>
+<uncertainty>0.018</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>1260.409</value>
+<uncertainty>0.017</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>1457.56</value>
+<uncertainty>0.03</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>1502.79</value>
+<uncertainty>0.04</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>1566.41</value>
+<uncertainty>0.03</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>1678.027</value>
+<uncertainty>0.021</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>1706.459</value>
+<uncertainty>0.021</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>1791.196</value>
+<uncertainty>0.021</uncertainty>
+</energy>
+</line>
+</nuclide>
+<nuclide name="XE-135">
+<halflife units="sec">
+<value>9.14</value>
+<uncertainty>0.02</uncertainty>
+</halflife>
+<line>
+<energy units="keV">
+<value>249.794</value>
+<uncertainty>0.015</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>608.185</value>
+<uncertainty>0.015</uncertainty>
+</energy>
+</line>
+</nuclide>
+<nuclide name="XE-135M">
+<halflife units="sec">
+<value>15.29</value>
+<uncertainty>0.05</uncertainty>
+</halflife>
+<line>
+<energy units="keV">
+<value>526.561</value>
+<uncertainty>0.017</uncertainty>
+</energy>
+</line>
+</nuclide>
+<nuclide name="CS-136">
+<halflife units="sec">
+<value>13.16</value>
+<uncertainty>0.03</uncertainty>
+</halflife>
+<line>
+<energy units="keV">
+<value>66.881</value>
+<uncertainty>0.017</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>86.36</value>
+<uncertainty>0.03</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>153.246</value>
+<uncertainty>0.004</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>163.92</value>
+<uncertainty>0.002</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>176.602</value>
+<uncertainty>0.004</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>273.646</value>
+<uncertainty>0.008</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>340.547</value>
+<uncertainty>0.008</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>818.514</value>
+<uncertainty>0.012</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>1048.073</value>
+<uncertainty>0.02</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>1235.362</value>
+<uncertainty>0.023</uncertainty>
+</energy>
+</line>
+</nuclide>
+<nuclide name="CS-137">
+<halflife units="sec">
+<value>30.08</value>
+<uncertainty>0.09</uncertainty>
+</halflife>
+<line>
+<energy units="keV">
+<value>661.657</value>
+<uncertainty>0.003</uncertainty>
+</energy>
+</line>
+</nuclide>
+<nuclide name="CS-138">
+<halflife units="sec">
+<value>33.41</value>
+<uncertainty>0.18</uncertainty>
+</halflife>
+<line>
+<energy units="keV">
+<value>138.1</value>
+<uncertainty>0.06</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>227.76</value>
+<uncertainty>0.06</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>408.98</value>
+<uncertainty>0.06</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>462.796</value>
+<uncertainty>0.005</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>547.001</value>
+<uncertainty>0.005</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>871.8</value>
+<uncertainty>0.08</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>1009.78</value>
+<uncertainty>0.08</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>1147.22</value>
+<uncertainty>0.09</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>1343.59</value>
+<uncertainty>0.09</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>1435.86</value>
+<uncertainty>0.09</uncertainty>
+</energy>
+</line>
+</nuclide>
+<nuclide name="XE-138">
+<halflife units="sec">
+<value>14.08</value>
+<uncertainty>0.08</uncertainty>
+</halflife>
+<line>
+<energy units="keV">
+<value>153.858</value>
+<uncertainty>0.003</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>242.56</value>
+<uncertainty>0.05</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>258.411</value>
+<uncertainty>0.02</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>396.513</value>
+<uncertainty>0.01</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>401.36</value>
+<uncertainty>0.05</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>434.562</value>
+<uncertainty>0.041</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>1768.26</value>
+<uncertainty>0.13</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>2004.75</value>
+<uncertainty>0.14</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>2015.82</value>
+<uncertainty>0.14</uncertainty>
+</energy>
+</line>
+</nuclide>
+<nuclide name="BA-139">
+<halflife units="sec">
+<value>83.06</value>
+<uncertainty>0.28</uncertainty>
+</halflife>
+<line>
+<energy units="keV">
+<value>165.8575</value>
+<uncertainty>0.0011</uncertainty>
+</energy>
+</line>
+</nuclide>
+<nuclide name="CE-139">
+<halflife units="sec">
+<value>137.641</value>
+<uncertainty>0.02</uncertainty>
+</halflife>
+<line>
+<energy units="keV">
+<value>165.8575</value>
+<uncertainty>0.0011</uncertainty>
+</energy>
+</line>
+</nuclide>
+<nuclide name="BA-140">
+<halflife units="sec">
+<value>12.7527</value>
+<uncertainty>0.0023</uncertainty>
+</halflife>
+<line>
+<energy units="keV">
+<value>162.66</value>
+<uncertainty>0.001</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>304.849</value>
+<uncertainty>0.003</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>423.722</value>
+<uncertainty>0.001</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>437.575</value>
+<uncertainty>0.002</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>537.261</value>
+<uncertainty>0.009</uncertainty>
+</energy>
+</line>
+</nuclide>
+<nuclide name="LA-140">
+<halflife units="sec">
+<value>1.67855</value>
+<uncertainty>0.00012</uncertainty>
+</halflife>
+<line>
+<energy units="keV">
+<value>328.762</value>
+<uncertainty>0.008</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>432.493</value>
+<uncertainty>0.012</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>487.021</value>
+<uncertainty>0.012</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>751.637</value>
+<uncertainty>0.018</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>815.772</value>
+<uncertainty>0.019</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>867.846</value>
+<uncertainty>0.02</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>919.55</value>
+<uncertainty>0.023</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>925.189</value>
+<uncertainty>0.021</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>1596.21</value>
+<uncertainty>0.04</uncertainty>
+</energy>
+</line>
+</nuclide>
+<nuclide name="CE-141">
+<halflife units="sec">
+<value>32.508</value>
+<uncertainty>0.001</uncertainty>
+</halflife>
+<line>
+<energy units="keV">
+<value>145.4433</value>
+<uncertainty>0.0014</uncertainty>
+</energy>
+</line>
+</nuclide>
+<nuclide name="CE-144">
+<halflife units="sec">
+<value>284.91</value>
+<uncertainty>0.05</uncertainty>
+</halflife>
+<line>
+<energy units="keV">
+<value>80.12</value>
+<uncertainty>0.005</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>133.515</value>
+<uncertainty>0.002</uncertainty>
+</energy>
+</line>
+</nuclide>
+<nuclide name="EU-152">
+<halflife units="sec">
+<value>13.537</value>
+<uncertainty>0.006</uncertainty>
+</halflife>
+<line>
+<energy units="keV">
+<value>121.7817</value>
+<uncertainty>0.0003</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>244.6975</value>
+<uncertainty>0.0008</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>344.2785</value>
+<uncertainty>0.0012</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>411.1163</value>
+<uncertainty>0.0011</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>443.965</value>
+<uncertainty>0.003</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>778.904</value>
+<uncertainty>0.0018</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>867.373</value>
+<uncertainty>0.003</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>963.39</value>
+<uncertainty>0.012</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>1085.869</value>
+<uncertainty>0.024</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>1112.069</value>
+<uncertainty>0.003</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>1408.006</value>
+<uncertainty>0.003</uncertainty>
+</energy>
+</line>
+</nuclide>
+<nuclide name="W-187">
+<halflife units="sec">
+<value>24</value>
+<uncertainty>0.004</uncertainty>
+</halflife>
+<line>
+<energy units="keV">
+<value>134.247</value>
+<uncertainty>0.007</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>479.53</value>
+<uncertainty>0.01</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>551.55</value>
+<uncertainty>0.01</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>618.37</value>
+<uncertainty>0.01</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>625.52</value>
+<uncertainty>0.01</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>685.81</value>
+<uncertainty>0.01</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>772.87</value>
+<uncertainty>0.02</uncertainty>
+</energy>
+</line>
+</nuclide>
+<nuclide name="HG-203">
+<halflife units="sec">
+<value>46.594</value>
+<uncertainty>0.012</uncertainty>
+</halflife>
+<line>
+<energy units="keV">
+<value>279.1952</value>
+<uncertainty>0.001</uncertainty>
+</energy>
+</line>
+</nuclide>
+<nuclide name="TL-208">
+<halflife units="sec">
+<value>3.053</value>
+<uncertainty>0.004</uncertainty>
+</halflife>
+<line>
+<energy units="keV">
+<value>2614.511</value>
+<uncertainty>0.01</uncertainty>
+</energy>
+</line>
+</nuclide>
+<nuclide name="PB-210">
+<halflife units="sec">
+<value>22.2</value>
+<uncertainty>0.22</uncertainty>
+</halflife>
+<line>
+<energy units="keV">
+<value>46.539</value>
+<uncertainty>0.001</uncertainty>
+</energy>
+</line>
+</nuclide>
+<nuclide name="BI-211">
+<halflife units="sec">
+<value>2.14</value>
+<uncertainty>0.02</uncertainty>
+</halflife>
+<line>
+<energy units="keV">
+<value>351.07</value>
+<uncertainty>0.05</uncertainty>
+</energy>
+</line>
+</nuclide>
+<nuclide name="PB-211">
+<halflife units="sec">
+<value>36.1</value>
+<uncertainty>0.2</uncertainty>
+</halflife>
+<line>
+<energy units="keV">
+<value>404.853</value>
+<uncertainty>0.01</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>427.088</value>
+<uncertainty>0.01</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>832.01</value>
+<uncertainty>0.03</uncertainty>
+</energy>
+</line>
+</nuclide>
+<nuclide name="BI-212">
+<halflife units="sec">
+<value>60.55</value>
+<uncertainty>0.06</uncertainty>
+</halflife>
+<line>
+<energy units="keV">
+<value>39.857</value>
+<uncertainty>0.004</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>727.33</value>
+<uncertainty>0.009</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>785.37</value>
+<uncertainty>0.08</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>1620.5</value>
+<uncertainty>0.1</uncertainty>
+</energy>
+</line>
+</nuclide>
+<nuclide name="PB-212">
+<halflife units="sec">
+<value>10.64</value>
+<uncertainty>0.01</uncertainty>
+</halflife>
+<line>
+<energy units="keV">
+<value>74.815</value>
+<uncertainty>0</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>77.107</value>
+<uncertainty>0</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>87.349</value>
+<uncertainty>0</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>89.784</value>
+<uncertainty>0</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>115.183</value>
+<uncertainty>0.005</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>238.632</value>
+<uncertainty>0.002</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>300.087</value>
+<uncertainty>0.01</uncertainty>
+</energy>
+</line>
+</nuclide>
+<nuclide name="BI-214">
+<halflife units="sec">
+<value>19.9</value>
+<uncertainty>0.4</uncertainty>
+</halflife>
+<line>
+<energy units="keV">
+<value>609.32</value>
+<uncertainty>0.005</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>769.7</value>
+<uncertainty>0.5</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>806.18</value>
+<uncertainty>0.009</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>934.5</value>
+<uncertainty>0.5</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>1120.294</value>
+<uncertainty>0.006</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>1156</value>
+<uncertainty>1</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>1238.122</value>
+<uncertainty>0.007</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>1280.976</value>
+<uncertainty>0.01</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>1377.669</value>
+<uncertainty>0.008</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>1385.31</value>
+<uncertainty>0.013</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>1401.515</value>
+<uncertainty>0.012</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>1407.988</value>
+<uncertainty>0.011</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>1509.21</value>
+<uncertainty>0.01</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>1661.274</value>
+<uncertainty>0.016</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>1729.595</value>
+<uncertainty>0.011</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>1764.491</value>
+<uncertainty>0.01</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>1847.429</value>
+<uncertainty>0.013</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>2120</value>
+<uncertainty>1</uncertainty>
+</energy>
+</line>
+</nuclide>
+<nuclide name="PB-214">
+<halflife units="sec">
+<value>26.8</value>
+<uncertainty>0.9</uncertainty>
+</halflife>
+<line>
+<energy units="keV">
+<value>74.815</value>
+<uncertainty>0</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>77.107</value>
+<uncertainty>0</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>87.349</value>
+<uncertainty>0</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>89.784</value>
+<uncertainty>0</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>241.995</value>
+<uncertainty>0.0023</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>295.2228</value>
+<uncertainty>0.0018</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>351.9321</value>
+<uncertainty>0.0018</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>785.96</value>
+<uncertainty>0.08</uncertainty>
+</energy>
+</line>
+</nuclide>
+<nuclide name="RN-219">
+<halflife units="sec">
+<value>3.96</value>
+<uncertainty>0.01</uncertainty>
+</halflife>
+<line>
+<energy units="keV">
+<value>271.23</value>
+<uncertainty>0.01</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>401.81</value>
+<uncertainty>0.01</uncertainty>
+</energy>
+</line>
+</nuclide>
+<nuclide name="RA-226">
+<halflife units="sec">
+<value>1600</value>
+<uncertainty>7</uncertainty>
+</halflife>
+<line>
+<energy units="keV">
+<value>186.211</value>
+<uncertainty>0.013</uncertainty>
+</energy>
+</line>
+</nuclide>
+<nuclide name="TH-227">
+<halflife units="sec">
+<value>18.68</value>
+<uncertainty>0.09</uncertainty>
+</halflife>
+<line>
+<energy units="keV">
+<value>50.85</value>
+<uncertainty>0.05</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>79.69</value>
+<uncertainty>0.02</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>85.431</value>
+<uncertainty>0</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>89.6</value>
+<uncertainty>0.4</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>94.97</value>
+<uncertainty>0.05</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>210.62</value>
+<uncertainty>0.05</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>235.96</value>
+<uncertainty>0.02</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>256.23</value>
+<uncertainty>0.02</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>286.09</value>
+<uncertainty>0.2</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>300.5</value>
+<uncertainty>0.16</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>304.5</value>
+<uncertainty>0.02</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>329.85</value>
+<uncertainty>0.02</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>334.37</value>
+<uncertainty>0.02</uncertainty>
+</energy>
+</line>
+</nuclide>
+<nuclide name="AC-228">
+<halflife units="sec">
+<value>6.15</value>
+<uncertainty>0.02</uncertainty>
+</halflife>
+<line>
+<energy units="keV">
+<value>89.957</value>
+<uncertainty>0</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>93.35</value>
+<uncertainty>0</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>129.065</value>
+<uncertainty>0.001</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>209.253</value>
+<uncertainty>0.006</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>270.245</value>
+<uncertainty>0.002</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>328</value>
+<uncertainty>0.006</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>338.32</value>
+<uncertainty>0.003</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>409.462</value>
+<uncertainty>0.006</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>463.004</value>
+<uncertainty>0.006</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>794.947</value>
+<uncertainty>0.005</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>911.204</value>
+<uncertainty>0.004</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>964.766</value>
+<uncertainty>0.01</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>968.971</value>
+<uncertainty>0.017</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>1588.2</value>
+<uncertainty>0.03</uncertainty>
+</energy>
+</line>
+</nuclide>
+<nuclide name="PA-231">
+<halflife units="sec">
+<value>32760</value>
+<uncertainty>110</uncertainty>
+</halflife>
+<line>
+<energy units="keV">
+<value>27.36</value>
+<uncertainty>0.01</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>283.69</value>
+<uncertainty>0.01</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>300.07</value>
+<uncertainty>0.01</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>302.65</value>
+<uncertainty>0.05</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>330.06</value>
+<uncertainty>0.01</uncertainty>
+</energy>
+</line>
+</nuclide>
+<nuclide name="TH-231">
+<halflife units="sec">
+<value>25.52</value>
+<uncertainty>0.01</uncertainty>
+</halflife>
+<line>
+<energy units="keV">
+<value>25.64</value>
+<uncertainty>0.02</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>84.214</value>
+<uncertainty>0.0013</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>89.95</value>
+<uncertainty>0.02</uncertainty>
+</energy>
+</line>
+</nuclide>
+<nuclide name="TH-234">
+<halflife units="sec">
+<value>24.1</value>
+<uncertainty>0.03</uncertainty>
+</halflife>
+<line>
+<energy units="keV">
+<value>92.8</value>
+<uncertainty>0.02</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>92.8</value>
+<uncertainty>0.02</uncertainty>
+</energy>
+</line>
+</nuclide>
+<nuclide name="PA-234M">
+<halflife units="sec">
+<value>1.159</value>
+<uncertainty>0.011</uncertainty>
+</halflife>
+<line>
+<energy units="keV">
+<value>766.42</value>
+<uncertainty>0.1</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>1001.03</value>
+<uncertainty>0.1</uncertainty>
+</energy>
+</line>
+</nuclide>
+<nuclide name="U-235">
+<halflife units="sec">
+<value>703800000</value>
+<uncertainty>500000</uncertainty>
+</halflife>
+<line>
+<energy units="keV">
+<value>89.957</value>
+<uncertainty>0</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>93.35</value>
+<uncertainty>0</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>104.819</value>
+<uncertainty>0</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>108.582</value>
+<uncertainty>0</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>142.4</value>
+<uncertainty>0.05</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>163.33</value>
+<uncertainty>0.02</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>185.715</value>
+<uncertainty>0.005</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>202.11</value>
+<uncertainty>0.02</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>205.311</value>
+<uncertainty>0.01</uncertainty>
+</energy>
+</line>
+</nuclide>
+<nuclide name="AM-241">
+<halflife units="sec">
+<value>432.6</value>
+<uncertainty>0.6</uncertainty>
+</halflife>
+<line>
+<energy units="keV">
+<value>59.5409</value>
+<uncertainty>0.0001</uncertainty>
+</energy>
+</line>
+</nuclide>
+<nuclide name="RA-226">
+<halflife units="sec">
+<value>1600</value>
+<uncertainty>7</uncertainty>
+</halflife>
+<line>
+<energy units="keV">
+<value>186.211</value>
+<uncertainty>0.013</uncertainty>
+</energy>
+</line>
+</nuclide>
+<nuclide name="PU-239">
+<halflife units="sec">
+<value>24110</value>
+<uncertainty>30</uncertainty>
+</halflife>
+<line>
+<energy units="keV">
+<value>97.6</value>
+<uncertainty>0.3</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>129.296</value>
+<uncertainty>0.001</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>375.054</value>
+<uncertainty>0.003</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>412.3</value>
+<uncertainty>0</uncertainty>
+</energy>
+</line>
+</nuclide>
+<nuclide name="GA-67">
+<halflife units="sec">
+<value>3.2617</value>
+<uncertainty>0.0005</uncertainty>
+</halflife>
+<line>
+<energy units="keV">
+<value>93.31</value>
+<uncertainty>0.005</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>184.576</value>
+<uncertainty>0.01</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>300.217</value>
+<uncertainty>0.01</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>393.527</value>
+<uncertainty>0.01</uncertainty>
+</energy>
+</line>
+</nuclide>
+<nuclide name="PD-103">
+<halflife units="sec">
+<value>16.991</value>
+<uncertainty>0.019</uncertainty>
+</halflife>
+<line>
+<energy units="keV">
+<value>357.45</value>
+<uncertainty>0.08</uncertainty>
+</energy>
+</line>
+</nuclide>
+<nuclide name="TL-201">
+<halflife units="sec">
+<value>3.0421</value>
+<uncertainty>0.0017</uncertainty>
+</halflife>
+<line>
+<energy units="keV">
+<value>135.34</value>
+<uncertainty>0.04</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>165.88</value>
+<uncertainty>0.07</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>165.88</value>
+<uncertainty>0.07</uncertainty>
+</energy>
+</line>
+</nuclide>
+<nuclide name="IN-111">
+<halflife units="sec">
+<value>2.8047</value>
+<uncertainty>0.0004</uncertainty>
+</halflife>
+<line>
+<energy units="keV">
+<value>171.28</value>
+<uncertainty>0.03</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>245.35</value>
+<uncertainty>0.04</uncertainty>
+</energy>
+</line>
+</nuclide>
+<nuclide name="I-123">
+<halflife units="sec">
+<value>13.2234</value>
+<uncertainty>0.0019</uncertainty>
+</halflife>
+<line>
+<energy units="keV">
+<value>158.97</value>
+<uncertainty>0.05</uncertainty>
+</energy>
+</line>
+</nuclide>
+<nuclide name="I-125">
+<halflife units="sec">
+<value>59.4</value>
+<uncertainty>0.01</uncertainty>
+</halflife>
+<line>
+<energy units="keV">
+<value>35.4925</value>
+<uncertainty>0.0005</uncertainty>
+</energy>
+</line>
+</nuclide>
+<nuclide name="TL-201">
+<halflife units="sec">
+<value>3.0421</value>
+<uncertainty>0.0017</uncertainty>
+</halflife>
+<line>
+<energy units="keV">
+<value>135.34</value>
+<uncertainty>0.04</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>165.88</value>
+<uncertainty>0.07</uncertainty>
+</energy>
+</line>
+</nuclide>
+<nuclide name="NP-237">
+<halflife units="sec">
+<value>2144000</value>
+<uncertainty>7000</uncertainty>
+</halflife>
+<line>
+<energy units="keV">
+<value>86.477</value>
+<uncertainty>0.01</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>143.249</value>
+<uncertainty>0.02</uncertainty>
+</energy>
+</line>
+<line>
+<energy units="keV">
+<value>0</value>
+<uncertainty>0</uncertainty>
+</energy>
+</line>
+</nuclide>
+</library>
+</tentative_nid>
+</analysis_settings>
+<analysis_results matches_spectrum="false" >
+<tentative_nid><nuclides>
+</nuclides></tentative_nid>
+</analysis_results>
+<annotations>
+</annotations>
+</mcadata>

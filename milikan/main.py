@@ -1,6 +1,9 @@
 import numpy as np
 import matplotlib.pyplot as plt
 import pandas
+import seaborn as sns
+
+plt.rcParams['text.usetex'] = True
 
 num = np.arange(1, 16, 1)
 voltage = np.array([323, 425, 424, 64, 112, 168, 173, 78, 116, 130, 150, 80, 36, 120, 42])
@@ -74,6 +77,10 @@ def qc(): #C
     return (up/np.sqrt(down))
 
 n = qc()/e
+n = np.round(n)
+n = n.astype(int)
+
+en = qc()/n
 
 df1 = pandas.DataFrame(
     {
@@ -94,13 +101,22 @@ df2 = pandas.DataFrame(
         "q":q()*10**(19),
         "qc":qc()*10**(19),
         "n":n,
+        "e":en*10**(19),
     }
 )
 df2 = df2.round(3)
 df2.to_csv("data/df2.csv", index=False)
-print(df2)
 
 #print(df1)
 plt.scatter(r(), q())
-plt.plot(r(), q())
-#plt.show()
+plt.xlabel(r"Poloměr kapky $r[m]$")
+plt.ylabel(r"Náboj kapky $q[C]$")
+plt.savefig("data/graph1.pdf")
+plt.cla()
+
+print(n)
+sns.histplot(n, kde=True, binwidth=0.5, edgecolor="black")
+plt.xticks([1,2,3,4,7,9,26,84])
+plt.ylabel("Počet nábojů")
+plt.xlabel("Četnost")
+plt.savefig("data/hist.pdf")

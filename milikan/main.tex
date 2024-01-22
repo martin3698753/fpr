@@ -70,7 +70,7 @@ Kde $R_{d} = 287.058 [J Kg^{-1} K^{-1}]$ je měrná plynová konstanta suchého 
 $R_{v} = 461.495[J Kg^{-1} K^{-1}]$ je měrná plynová konstanta vodních par.\\
 
 Poloměr kapky
-\begin{equation}
+\begin{equation}\label{eq:r}
   r = \sqrt{\frac{9}{2} \frac{\eta \frac{\Delta x}{\Delta t}}{(p_{2} - p_{1})g}}
 \end{equation}
 Kde $\eta$ je viskozita vzduchu, $\rho_{2} = 873$ je hustota oleje, $g = 9.81$ je gravitační zrychlení.\\
@@ -80,7 +80,7 @@ Náboj kapky
 \end{equation}
 Kde $d = 6mm$ je vzdálenost mezi deskami kondenzátoru, $U$ je napětí.\\
 Korekce náboje kapky
-\begin{equation}
+\begin{equation}\label{eq:cr}
   q_{c} = \frac{q}{\sqrt{ \left(1+\frac{A}{r} \right)^{3}}}
 \end{equation}
 Kde $A = 0.07776 \mu m$ je koeficient tření olejové kapky
@@ -111,7 +111,15 @@ Tlak saturovaných par $p_{sat} = 26.278 [hPa]$ \\
 Tlak vodních par $p_{v} = 10.422 [hPa]$ \\
 Parciální tlak suchého vzduchu $p_{d} = 954.543 [hPa]$ \\
 Hustota vzduchu $\rho_{1} = 1.134 [kg m^{-3}]$ \\
-
+\newpage
+Poloměr kapky, náboj kapky a korekci náboje kapky jsem počítal podle vzorců
+\ref{eq:r} až \ref{eq:cr}.\\
+Počet elektronů v kapce jsem počítal jako
+$$n = \frac{q_{c}}{e_{t}}$$
+Kde $n$ jsem zaokrouhlil na nejbližší celé číslo a $e_{t}$ je hodnota náboje elektronu z tabulky.\\
+Můj naměřený náboj jsem spočetl jako
+$$e = \frac{q_{c}}{n}$$
+\\
 \footnotesize{Tabulka 1:}\\
 \\
 \normalsize{
@@ -119,15 +127,23 @@ Hustota vzduchu $\rho_{1} = 1.134 [kg m^{-3}]$ \\
 tabular = |c|c|c|c|c|,
 table head =
 \hline
-{Poloměr kapky $r [m \cdot 10^{-6}]$}&{Náboj kapky $q [C \cdot 10^{-19}]$}&
-{korekce náboje kapky $q [C \cdot 10^{-19}]$}\\
+{Poloměr kapky} & {Náboj kapky} & {korekce náboje kapky} & {počet elektronů}&{náboj}\\
+{$r [m \cdot 10^{-6}]$} & {$q [C \cdot 10^{-19}]$} & {$q_{c} [C \cdot 10^{-19}]$}&{$n$}&{$e [C\cdot 10^{-19}]$}\\
 \hline
 \hline,
 late after line = \\\hline
 ]{data/df2.csv}{}{
-  \csvcoli & \csvcolii & \csvcoliii}
+  \csvcoli & \csvcolii & \csvcoliii & \csvcoliv & \csvcolv}
 }
 \\
 \vspace{1em}
 \\
+\begin{figure}[h]
+  \includegraphics[scale=1]{data/graph1.pdf}
+  \caption{Rutherfordův rozptyl}
+\end{figure}
+\begin{figure}[h]
+  \includegraphics[scale=1]{data/hist.pdf}
+  \caption{Rutherfordův rozptyl}
+\end{figure}
 \end{document}
