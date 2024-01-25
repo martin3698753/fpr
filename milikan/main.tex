@@ -1,4 +1,3 @@
-
 \documentclass{article}
 \usepackage[utf8]{inputenc}
 \usepackage{blindtext}
@@ -8,6 +7,7 @@
 \usepackage{pdfpages}
 \usepackage{hyperref}
 \usepackage{gensymb}
+
 
 \begin{document}
 \begin{center}
@@ -21,11 +21,11 @@
 \vspace{20px}
 \\
 \vspace{20px}
-\large{Comptnův rozptyl} \\
+\large{Milikanův experiment} \\
 \vspace{60px}
 \end{center}
 \begin{flushleft}
-Datum: 18.10.2023 \\
+Datum: 25.1.2024 \\
 Jmeno: Martin Skok \\
 Obor: Fyzika \\
 Hodnoceni:
@@ -33,7 +33,7 @@ Hodnoceni:
 \newpage
 \section{Úkoly}
 \begin{itemize}
-  \item{experimetálně zjistit hodnotu elektrického elementárního náboje e pomocí Milikanova experimentu}
+  \item{experimetálně zjistit hodnotu elektrického elementárního náboje $e$ pomocí Milikanova experimentu}
 \end{itemize}
 \section{Pomůcky}
 Základní deska, mikroskop s milimetrovou škálou, deskový kondenzátor, osvětlovací zařízení,
@@ -85,6 +85,20 @@ Korekce náboje kapky
 \end{equation}
 Kde $A = 0.07776 \mu m$ je koeficient tření olejové kapky
 \newpage
+\section{Postup}
+Během měření jsem jsem opakovaně zapisoval teplotu, tlak a relativní vlhkost v místnosti.\\
+Zapojil jsem obvod podle schématu.\\
+V rozprašovači byl dostatek oleje.\\
+Zapnul jsem zdroj, napěťí jsem nastavil na $0V$.
+Zaostřil jsem čočku, abych viděl milimetrovou škálu a pak ji nastavil do vertikální polohy.\\
+Mezi desky kondenzátoru jsem vstřiknul olej.\\
+Vybral jsem si kapku a zapnul jsem napěťí.\\
+Nastavil jsem napěťí tak, aby se požadovaná kapka vlivem napěťí přestala hýbat.\\
+Toto napěťí jsem zaznamenal.\\
+Poté jsem napěťí vypnul a zmáčknul jsem na stopkách \textbf{start}.\\
+Sledoval jsem, o kolik dílků se kapka pohnula a zmáčknul jsem na stopkách \textbf{stop}.\\
+Hodnoty uplynulého času $\Delta t$ a vzdálenosti, které kapka za tu dobu urazila $\Delta s$ jsem si poznamenal.\\
+Toto jsem udělal několikrát, aby měl více měření.\\
 \section{Data}
 \footnotesize{Tabulka 1:}\\
 \\
@@ -105,13 +119,13 @@ late after line = \\\hline
 \vspace{1em}
 \\
 Následující hodnoty jsem počítal podle vzorců \ref{eq:vis} až \ref{eq:p1} a potom jsem
-tři hodnoty, které mi vyšli, aritemticky zprůměroval\\\\
+tři hodnoty, které mi vyšli, aritemticky zprůměroval.\\\\
 Dynamická viskozita vzduchu $\eta_{vzduch} = 18.463 [\mu Pa]$ \\
 Tlak saturovaných par $p_{sat} = 26.278 [hPa]$ \\
 Tlak vodních par $p_{v} = 10.422 [hPa]$ \\
 Parciální tlak suchého vzduchu $p_{d} = 954.543 [hPa]$ \\
 Hustota vzduchu $\rho_{1} = 1.134 [kg m^{-3}]$ \\
-\newpage
+\\
 Poloměr kapky, náboj kapky a korekci náboje kapky jsem počítal podle vzorců
 \ref{eq:r} až \ref{eq:cr}.\\
 Počet elektronů v kapce jsem počítal jako
@@ -138,12 +152,33 @@ late after line = \\\hline
 \\
 \vspace{1em}
 \\
-\begin{figure}[h]
+$\overline{e} = \sum^{n}_{i=1}\frac{e_{i}}{n}$\\
+$$\overline{e} = 1.642848 \cdot 10 ^{-19}$$ \\
+$\sigma_{e} = \sqrt{\frac{\sum^{n}_{i=1}(g_{i} - \overline{e})^{2}}{n-1}}$\\
+$$\sigma_{e} = 0.102798 \cdot 10 ^{19}$$
+\begin{figure}[!h]
   \includegraphics[scale=1]{data/graph1.pdf}
-  \caption{Rutherfordův rozptyl}
+  \caption{Závislost náboje na poloměru kapky $q(r)$}
 \end{figure}
-\begin{figure}[h]
+\newpage
+\begin{figure}[!h]
   \includegraphics[scale=1]{data/hist.pdf}
-  \caption{Rutherfordův rozptyl}
+  \caption{Histogram četnosti náboje}
 \end{figure}
+\section{Diskuse}
+Úspěšně jsem změřil elementární náboj pomocí Milikanova oil drop experimentu.
+Hodnota, která my višla, se liší od skutečné hodnoty, ale spadá do odchylky chyby.\\
+Skutečná hodnota je $e = 1.602 176 634 \cdot 10^{-19} [C]$.\\
+Chyby mohli být způsobeny nepřesným zastavováním stopek,
+nepřesným určením napěťí, při kterém se kapka neměla hýbat, ale stále se hýbala nebo
+špatným zrakem, když jsem se koukal mikroskopem na mřížku a určoval kapky.
+\section{Závěr}
+Finální naměřená hodnota elementárního náboje\\
+$$e = (1.642 847 \pm 0.102798) \cdot 10^{-19} [C]$$
+\section{Zdroje}
+\begin{itemize}
+  \item\url{https://en.wikipedia.org/wiki/Oil_drop_experiment}
+  \item\url{https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Introductory_Chemistry_(CK-12)/04%3A_Atomic_Structure/4.12%3A_Oil_Drop_Experiment}
+  \item\url{https://elearning.jcu.cz/pluginfile.php/434390/mod_resource/content/2/1_Millikan%C5%AFv_experiment.pdf}
+\end{itemize}
 \end{document}

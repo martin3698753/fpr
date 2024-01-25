@@ -104,6 +104,8 @@ df2 = pandas.DataFrame(
         "e":en*10**(19),
     }
 )
+print(np.mean(en*10**(19)))
+print(np.std(en*10**(19)))
 df2 = df2.round(3)
 df2.to_csv("data/df2.csv", index=False)
 
@@ -114,7 +116,6 @@ plt.ylabel(r"Náboj kapky $q[C]$")
 plt.savefig("data/graph1.pdf")
 plt.cla()
 
-print(n)
 sns.histplot(n, kde=True, binwidth=0.5, edgecolor="black")
 plt.xticks([1,2,3,4,7,9,26,84])
 plt.ylabel("Počet nábojů")
