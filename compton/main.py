@@ -12,7 +12,7 @@ from scipy.signal import find_peaks as fp
 #Spectrum
 #Channel, Energy (keV), Counts
 
-angs = ['0', '10', '20', '30', '40', '50', '60', '70']
+angs = np.array(['0', '10', '20', '30', '40', '50', '60', '70'])
 energy = np.zeros(8)
 energy_c = np.zeros(8)
 
@@ -66,14 +66,23 @@ fun1(angs[5], (2,1), 150, 5)
 fun1(angs[6], (3,0), 50, 6)
 fun1(angs[7], (3,1), 40, 7)
 plt.savefig("figs/fig1.pdf")
-plt.show()
+#plt.show()
 plt.clf()
 
+angle = angs.astype(int)
+angle = np.deg2rad(angle)
+angle = 1 - np.cos(angle)
 df = pd.DataFrame(
     {
         "angle":angs,
-        "E":energy,
-        "E'":energy_c,
+        "E2":energy,
+        "E1":energy_c,
+        "1-cosv":angle,
     }
 )
+df = df.round(3)
+df.to_csv("figs/data1.csv", index=False)
 print(df)
+e1 = np.mean(energy_c)
+print("mean E1", np.mean(energy_c))
+print("std E1", np.std(energy_c))

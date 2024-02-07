@@ -21,6 +21,9 @@
     "csvsimple"
     "pdfpages"
     "hyperref"
-    "gensymb"))
+    "gensymb")
+   (LaTeX-add-labels
+    "eq:1"
+    "eq:2"))
  :latex)
 

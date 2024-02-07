@@ -56,9 +56,47 @@ Pokud elektron bude před srážkou v klidu, bude mít energii $E_{0} = mc^{2}$,
 mít energii $\sqrt{E_{0} + p^{2}_{e}c^{2}}$.
 $$p_{1}c + E_{0} = p_{2}c + \sqrt{E_{0}^{2} + p_{e}^{2}c^{2}}$$
 $$\vdots$$
-\begin{equation}
-  \lambda_{1} - \lambda_{2} = \frac{h}{mc} (1-cos\theta)
+\begin{equation}\label{eq:1}
+  \lambda_{1} - \lambda_{2} = \frac{h}{m_{0}c} (1-cos\theta)
 \end{equation}
-$\lambda_{1}$ je vlnová délka nalétavajícího fotonu a $\lambda_{2}$ fotonu po srážce.
+$\lambda_{1}$ je vlnová délka nalétavajícího fotonu a $\lambda_{2}$ fotonu po srážce.\\
+Vydělením předchozí rovnice $h$ dostaneme vztah\\
+$$\frac{1}{h} (\lambda_{1} - \lambda_{2}) = \frac{1}{m_{0}c} (1-cos\theta)$$
+$$\frac{1}{p_{1}} - \frac{1}{p_{2}} = \frac{1}{m_{0}c} (1-cos\theta)$$
+Vydělím celou rovnici $c$\\
+\begin{equation}\label{eq:2}
+  \frac{1}{E_{1}} - \frac{1}{E_{2}} = \frac{1}{m_{0}c^{2}} (1-cos\theta)
+\end{equation}
+\section{}
+\newpage
+\section{Data}
+\begin{figure}[h]
+  \hspace*{-1em}
+  \includegraphics[scale=0.8]{figs/fig1.pdf}
+  \caption{Graf závislosti napětí odezvy vzorku na napětím budícím magnetické pole}
+\end{figure}
+\\
+Jednotlivé peaky v grafu značí energii $E_{2}(\lambda_{2})$ (ten modrý) a $E_{1}(\lambda_{1})$ (ten červený).\\
+\\
+\footnotesize{Tabulka 1:}\\
+
+\csvreader[
+tabular = |c|c|c|c|,
+table head =
+\hline
+{úhel}&{$E_{2}[KeV]$}&{$E_{1}[KeV]$}&{$1 - cos(\theta)$}\\
+\hline
+\hline,
+late after line = \\\hline
+]{figs/data1.csv}{}{
+  \csvcoli & \csvcolii & \csvcoliii & \csvcoliv}
+\\
+\vspace{1em}
+\\
+\newpage
+Rovnici \ref{eq:2} můžeme upravit na tvar\\
+$$- \frac{1}{E_{2}} = \frac{1}{m_{0}c^{2}} (1-cos\theta) - \frac{1}{E_{1}}$$
+$$\frac{1}{E_{2}} = -\frac{1}{m_{0}c^{2}} (1-cos\theta) + \frac{1}{E_{1}}$$
+Což je vlastně lineární rovnice o tvaru $u(x) = -ax + b$
 
 \end{document}
