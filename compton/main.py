@@ -11,10 +11,13 @@ from scipy.signal import find_peaks as fp
 #Elapsed Computational, 0
 #Spectrum
 #Channel, Energy (keV), Counts
+plt.rc('text', usetex=True)
 
 angs = np.array(['0', '10', '20', '30', '40', '50', '60', '70'])
 energy = np.zeros(8)
 energy_c = np.zeros(8)
+c = 3*10**8
+e = 1.6*10**(-19)
 
 fig, ax = plt.subplots(4, 2)
 fig.tight_layout()
@@ -72,6 +75,24 @@ plt.clf()
 angle = angs.astype(int)
 angle = np.deg2rad(angle)
 angle = 1 - np.cos(angle)
+
+#Fit
+a, b = np.polyfit(angle, 1/energy, 1)
+
+fig, ax = plt.subplots()
+ax.scatter(angle, 1/energy)
+ax.plot(angle, angle*a+b, label=r"$u(x) = ax + b$")
+ax.set_xlabel(r'$1-cos(\theta)$', fontsize=15)
+ax.set_ylabel(r'$\frac{1}{E_2}$', fontsize=15)
+ax.legend(loc="upper left")
+plt.savefig("figs/fig2.pdf")
+#plt.show()
+plt.clf()
+m0 = 1/(a*c**2)
+print("m0", m0)
+e1 = 1/b
+print("e1", e1)
+
 df = pd.DataFrame(
     {
         "angle":angs,
@@ -82,7 +103,3 @@ df = pd.DataFrame(
 )
 df = df.round(3)
 df.to_csv("figs/data1.csv", index=False)
-print(df)
-e1 = np.mean(energy_c)
-print("mean E1", np.mean(energy_c))
-print("std E1", np.std(energy_c))

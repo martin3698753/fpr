@@ -24,7 +24,7 @@ def fun1(name, vec):
     yp = peaks[1]['peak_heights']
     xp = x[peaks[0]]
 
-    ax[vec].plot(x, y)
+    ax[vec].scatter(x, y)
     #ax[vec].scatter(xp, yp)
     #plt.axvline(1166.25)
     #plt.axvline(1178.02)
