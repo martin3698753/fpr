@@ -26,7 +26,7 @@
 \vspace{60px}
 \end{center}
 \begin{flushleft}
-Datum: 18.10.2023 \\
+Datum: 10.2.2024 \\
 Jmeno: Martin Skok \\
 Obor: Fyzika \\
 Hodnoceni:
@@ -67,7 +67,12 @@ Vydělím celou rovnici $c$\\
 \begin{equation}\label{eq:2}
   \frac{1}{E_{1}} - \frac{1}{E_{2}} = \frac{1}{m_{0}c^{2}} (1-cos\theta)
 \end{equation}
-\section{}
+\section{Postup měření}
+Na stole byl detektor a zdroj záření umístěny proti sobě pod úhlem $180^{\degree}$.\\
+Detektor byl zapnut a data byla odesílána do počítače.\\
+Snímal jsem 10 sekund a uložil data.\\
+Posunul jsem dekektor o $10^{\degree}$ a opakoval jsem proces.\\
+Detektor jsem celkově posouval pro úhly od $0^{\degree} - 70^{\degree}$.
 \newpage
 \section{Data}
 \begin{figure}[h]
@@ -93,6 +98,8 @@ late after line = \\\hline
 \\
 \vspace{1em}
 \\
+$E_{1}$ je konstantní. Když jsem hodnoty zprůměroval, vyšlo mi\\
+$\overline{E_{1}} = 653.659 \pm 4.118$, což však není přesná hodnota.
 \newpage
 \\
 Rovnici \ref{eq:2} můžeme upravit na tvar\\
@@ -107,7 +114,19 @@ Což je vlastně lineární rovnice o tvaru $u(x) = -ax + b$
 \\
 Kde $a = 0.00193438$ a $b = 0.00150388$\\
 $$a = \frac{1}{m_{0}c^{2}}$$
-$$m_{0} = \frac{1}{ac^{2}} = $$
+$$m_{0} = \frac{1}{ac^{2}} = 516.961 \frac{KeV}{c^{2}} = 9.215 \cdot 10^{-31} Kg$$
 $$b = \frac{1}{E_{1}}$$
 $$E_{1} = \frac{1}{b} = 664.943 KeV$$
+\newpage
+\section{Diskuse}
+Jak je vidět z grafů a tabulek, energie gamma ($E_{2}$) klesá v závislosti na úhlu rozptylu.
+Vykreslil jsem graf $\frac{1}{E_{2}}(1-cos\theta)$, ze kterého jsem potom určil původní
+energii gamma a klidovou hmotnost elektronu. Naměřené hodnoty s však od tabulkových
+hodnot liší. Chyba mohla být vytvořena nepřesným umístěním detektoru pod správný úhel.
+\section{Závěr a naměřené hodnoty}
+$$m_{0} = 9.215 \cdot 10^{-31} [Kg]$$
+$$E_{1} = 664.943 [KeV]$$
+\section{Zdroje}
+\url{https://phys.libretexts.org/Bookshelves/Modern_Physics/Book%3A_Spiral_Modern_Physics_(D'Alessandris)/4%3A_The_Photon/4.2%3A_Compton_Scattering}\\\\
+\url{https://courses.physics.ucsd.edu/2017/Spring/physics4e/compton.pdf}
 \end{document}
