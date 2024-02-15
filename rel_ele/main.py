@@ -11,8 +11,8 @@ def edge_theory(emax):
     down = 2*emax + me
     return (up/down)
 
-names = ['Cs137', 'Co60', 'Na22', 'Y88', 'Eu152']
-def fun2(name, both):
+names = ['Cs137', 'Co60', 'Na22', 'Y88', 'Y88b', 'Eu152']
+def fun2(name):
     fig, ax = plt.subplots(2, 1)
     fig.tight_layout()
     df = pd.read_csv("data/" + name + ".csv")
@@ -22,19 +22,35 @@ def fun2(name, both):
 
     match name:
         case 'Co60':
-            ax[0].set_xlim([800, 1300])
-            ax[1].set_xlim([1100, 1200])
+            fig, ax = plt.subplots(3, 1)
+            #ax[0].set_xlim([800, 1300])
+            #ax[0].xaxis.set_major_locator(ticker.MultipleLocator(100))
+            #ax[0].xaxis.set_minor_locator(ticker.MultipleLocator(10))
+            ax[1].set_xlim([900, 1000])
             ax[1].set_ylim([0, 30])
             ax[1].xaxis.set_major_locator(ticker.MultipleLocator(10))
             ax[1].xaxis.set_minor_locator(ticker.MultipleLocator(2))
             ax[1].yaxis.set_major_locator(ticker.MultipleLocator(100))
             ax[1].yaxis.set_minor_locator(ticker.MultipleLocator(10))
+            l = 958
+            r = 962
+            ax[1].axvline(l)
+            ax[1].axvline(r)
+            hrana = np.mean([l, r])
+
+            ax[2].set_xlim([1100, 1200])
+            ax[2].set_ylim([0, 30])
+            ax[2].xaxis.set_major_locator(ticker.MultipleLocator(10))
+            ax[2].xaxis.set_minor_locator(ticker.MultipleLocator(2))
+            ax[2].yaxis.set_major_locator(ticker.MultipleLocator(100))
+            ax[2].yaxis.set_minor_locator(ticker.MultipleLocator(10))
             l = 1114
             r = 1122
-            plt.axvline(l)
-            plt.axvline(r)
-            hrana = np.mean([l, r])
+            ax[2].axvline(l)
+            ax[2].axvline(r)
+            hranb = np.mean([l, r])
         case 'Cs137':
+            fig, ax = plt.subplots(2, 1)
             ax[0].set_xlim([200, 680])
             ax[0].xaxis.set_major_locator(ticker.MultipleLocator(100))
             ax[0].xaxis.set_minor_locator(ticker.MultipleLocator(10))
@@ -48,27 +64,43 @@ def fun2(name, both):
             plt.axvline(r)
             hrana = np.mean([l, r])
         case 'Na22':
-            ax[0].set_xlim([200, 600])
-            ax[0].xaxis.set_major_locator(ticker.MultipleLocator(100))
-            ax[0].xaxis.set_minor_locator(ticker.MultipleLocator(10))
+            fig, ax = plt.subplots(3, 1)
+            #ax[0].set_xlim([200, 600])
+            #ax[0].xaxis.set_major_locator(ticker.MultipleLocator(100))
+            #ax[0].xaxis.set_minor_locator(ticker.MultipleLocator(10))
             ax[1].set_ylim([0, 100])
             ax[1].set_xlim([200, 400])
             ax[1].xaxis.set_major_locator(ticker.MultipleLocator(100))
             ax[1].xaxis.set_minor_locator(ticker.MultipleLocator(10))
             l = 330
             r = 360
-            plt.axvline(l)
-            plt.axvline(r)
+            ax[1].axvline(l)
+            ax[1].axvline(r)
             hrana = np.mean([l, r])
+
+            ax[2].set_ylim([0, 10])
+            ax[2].set_xlim([1040, 1090])
+            ax[2].xaxis.set_major_locator(ticker.MultipleLocator(10))
+            ax[2].xaxis.set_minor_locator(ticker.MultipleLocator(1))
+            l = 1061
+            r = 1063
+            ax[2].axvline(l)
+            ax[2].axvline(r)
+            hranb = np.mean([l, r])
         case 'Y88':
+            fig, ax = plt.subplots(3, 1)
             ax[0].set_ylim([0, 7000])
-            ax[0].set_xlim([400, 1000])
-            ax[0].xaxis.set_major_locator(ticker.MultipleLocator(50))
-            ax[0].xaxis.set_minor_locator(ticker.MultipleLocator(5))
-            ax[1].set_ylim([0, 500])
-            ax[1].set_xlim([500, 800])
-            ax[1].xaxis.set_major_locator(ticker.MultipleLocator(20))
-            ax[1].xaxis.set_minor_locator(ticker.MultipleLocator(5))
+            ax[0].set_xlim([500, 1600])
+            ax[0].xaxis.set_major_locator(ticker.MultipleLocator(100))
+            ax[0].xaxis.set_minor_locator(ticker.MultipleLocator(10))
+            ax[1].set_ylim([100, 500])
+            ax[1].set_xlim([650, 750])
+            ax[1].xaxis.set_major_locator(ticker.MultipleLocator(10))
+            ax[1].xaxis.set_minor_locator(ticker.MultipleLocator(1))
+            ax[2].set_ylim([0, 500])
+            ax[2].set_xlim([1200, 1300])
+            ax[2].xaxis.set_major_locator(ticker.MultipleLocator(10))
+            ax[2].xaxis.set_minor_locator(ticker.MultipleLocator(1))
             l = 685
             r = 710
             plt.axvline(l)
@@ -76,16 +108,22 @@ def fun2(name, both):
             hrana = np.mean([l, r])
 
 
+    fig.tight_layout()
+    df = pd.read_csv("data/" + name + ".csv")
+    y = df[" Counts"].values
+    x = df[" Energy (keV)"].values
+    y = sf(y, 50, 2)
+
     if (name == "Y88"):
-        peaks = fp(y, height=800)
+        peaks = fp(y, height=2000)
     else:
         peaks = fp(y, height=100)
     yp = peaks[1]['peak_heights']
     xp = x[peaks[0]]
-    ax[0].scatter(xp, yp)
-    ax[1].scatter(xp, yp)
-    ax[0].plot(x, y)
-    ax[1].plot(x, y)
+    for i in range(3):
+        ax[i].scatter(xp, yp)
+        ax[i].plot(x, y)
+        ax[i].grid(axis='x', which='both')
 
     plt.savefig("figs/" + name + ".pdf")
     plt.show()
@@ -129,4 +167,4 @@ def fun2(name, both):
 #fun1(names[2], (1, 0))
 #fun1(names[3], (1, 1))
 #plt.show()
-fun2(names[3], 1)
+fun2(names[3])
