@@ -5,6 +5,9 @@ import pandas as pd
 from scipy.signal import savgol_filter as sf
 from scipy.signal import find_peaks as fp
 
+c = 299792458
+me = 510.998950
+
 def edge_theory(emax):
     me = 510.998
     up = 2*emax**2
@@ -152,21 +155,30 @@ def fun2(name):
         ax[i].grid(axis='x', which='both')
 
     plt.savefig("figs/" + name + ".pdf")
-    #plt.clf()
-    plt.show()
+    plt.clf()
+    #plt.show()
     return(edges)
 
 edg = np.empty(0, dtype=int)
 for n in names:
     edg = np.append(edg, fun2(n))
 
-nms = ['Cs137', 'Co60', '', 'Na22', '', 'Y88', '']
+nms = ['Cs137', 'Co60', '-', 'Na22', '-', 'Y88', ' -']
 peak_data = np.array([661.666, 1173.3245, 1332.5978, 551.03069, 1274.69751831, 897.96597451, 1460.7852461])
+#p = np.array((2*peak_data - edg))
+p = np.sqrt(edg*2*me)
+T = p**2/(2*me)
+Tr = np.sqrt((p**2) + (me**2 * c**4)) - me*c**2
 df1 = pd.DataFrame(
     {
         "name":nms,
         "peaks":peak_data,
         "edges":edg,
+        "momentum":p,
+        "T":T,
+        "Tr":Tr,
     }
 )
+#df1 = df1.round(3)
+df1.to_csv("figs/df1.csv")
 print(df1)
