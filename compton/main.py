@@ -58,7 +58,7 @@ def fun1(angle, vec, h, index):
     ax[vec].scatter(xp, yp, c='blue')
     ax[vec].scatter(xp_c, yp_c, c='red')
     ax[vec].plot(x, y)
-    ax[vec].set_title("hello", fontsize=8)
+    ax[vec].set_title("úhel je " + angle + " stupňů", fontsize=8)
 
 fun1(angs[0], (0,0), 10000, 0)
 fun1(angs[1], (0,1), 5000, 1)

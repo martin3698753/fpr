@@ -7,6 +7,14 @@ from scipy.signal import find_peaks as fp
 
 c = 299792458
 me = 510.998950
+e = 1.602176634*10**(-19)
+
+def plot_line(x, y, c, label):
+    x = np.sort(x)
+    y = np.sort(y)
+    plt.scatter(x, y, c=c)
+    a = np.polyfit(x, y, 2)
+    plt.plot(x, a[0]*x**2+a[1]*x+a[2], c=c, label=label)
 
 def edge_theory(emax):
     me = 510.998
@@ -163,22 +171,25 @@ edg = np.empty(0, dtype=int)
 for n in names:
     edg = np.append(edg, fun2(n))
 
+plt.clf()
 nms = ['Cs137', 'Co60', '-', 'Na22', '-', 'Y88', ' -']
 peak_data = np.array([661.666, 1173.3245, 1332.5978, 551.03069, 1274.69751831, 897.96597451, 1460.7852461])
-#p = np.array((2*peak_data - edg))
-p = np.sqrt(edg*2*me)
-T = p**2/(2*me)
-Tr = np.sqrt((p**2) + (me**2 * c**4)) - me*c**2
+p = (2*peak_data - edg)/1
+#p = np.sqrt(edg*2*me)
+Tk = p**2/(2*me)
+Tr = np.sqrt(p**2 + me**2) - me
 df1 = pd.DataFrame(
     {
         "name":nms,
         "peaks":peak_data,
         "edges":edg,
         "momentum":p,
-        "T":T,
+        "Tk":Tk,
         "Tr":Tr,
     }
 )
-#df1 = df1.round(3)
-df1.to_csv("figs/df1.csv")
-print(df1)
+df1 = df1.round(3)
+df1.to_csv("figs/df1.csv", index=False)
+plot_line(p, Tk, 'blue', 'klasická')
+plot_line(p, Tr, 'red', 'relativistická')
+plt.legend()

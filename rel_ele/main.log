@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2024.1.24)  20 FEB 2024 14:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2024.1.24)  20 FEB 2024 21:32
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -473,7 +473,7 @@ Package gensymb Info: Using \Omega for \ohm on input line 12.
 
 Package gensymb Warning: Not defining \micro.
 
-<~/school/logo.png, id=24, 53.2389pt x 50.589pt>
+<~/school/logo.png, id=32, 53.2389pt x 50.589pt>
 File: ~/school/logo.png Graphic file (type png)
 <use ~/school/logo.png>
 Package pdftex.def Info: ~/school/logo.png  used on input line 18.
@@ -481,87 +481,108 @@ Package pdftex.def Info: ~/school/logo.png  used on input line 18.
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} </home/martin/school/logo.p
-ng (PNG copy)>]
-<figs/Cs137.pdf, id=33, 462.52798pt x 346.89601pt>
+ng (PNG copy)>] [2{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.
+enc}]
+<figs/Cs137.pdf, id=54, 462.52798pt x 346.89601pt>
 File: figs/Cs137.pdf Graphic file (type pdf)
 <use figs/Cs137.pdf>
-Package pdftex.def Info: figs/Cs137.pdf  used on input line 59.
+Package pdftex.def Info: figs/Cs137.pdf  used on input line 70.
 (pdftex.def)             Requested size: 370.02287pt x 277.51718pt.
 
-Overfull \hbox (17.24507pt too wide) in paragraph at lines 58--60
+Overfull \hbox (17.24507pt too wide) in paragraph at lines 69--71
 []|  [] 
  []
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<figs/Co60.pdf, id=34, 462.52798pt x 346.89601pt>
+[3 <./figs/Cs137.pdf>]
+<figs/Co60.pdf, id=75, 462.52798pt x 346.89601pt>
 File: figs/Co60.pdf Graphic file (type pdf)
 <use figs/Co60.pdf>
-Package pdftex.def Info: figs/Co60.pdf  used on input line 64.
+Package pdftex.def Info: figs/Co60.pdf  used on input line 76.
 (pdftex.def)             Requested size: 370.02287pt x 277.51718pt.
 
-Overfull \hbox (17.24507pt too wide) in paragraph at lines 63--65
+Overfull \hbox (17.24507pt too wide) in paragraph at lines 75--77
 []|  [] 
  []
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<figs/Na22.pdf, id=35, 462.52798pt x 346.89601pt>
+[4 <./figs/Co60.pdf>]
+<figs/Na22.pdf, id=99, 462.52798pt x 346.89601pt>
 File: figs/Na22.pdf Graphic file (type pdf)
 <use figs/Na22.pdf>
-Package pdftex.def Info: figs/Na22.pdf  used on input line 69.
+Package pdftex.def Info: figs/Na22.pdf  used on input line 82.
 (pdftex.def)             Requested size: 370.02287pt x 277.51718pt.
 
-Overfull \hbox (17.24507pt too wide) in paragraph at lines 68--70
+Overfull \hbox (17.24507pt too wide) in paragraph at lines 81--83
 []|  [] 
  []
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<figs/Y88.pdf, id=36, 462.52798pt x 346.89601pt>
+[5 <./figs/Na22.pdf>]
+<figs/Y88.pdf, id=123, 462.52798pt x 346.89601pt>
 File: figs/Y88.pdf Graphic file (type pdf)
 <use figs/Y88.pdf>
-Package pdftex.def Info: figs/Y88.pdf  used on input line 74.
+Package pdftex.def Info: figs/Y88.pdf  used on input line 88.
 (pdftex.def)             Requested size: 370.02287pt x 277.51718pt.
 
-Overfull \hbox (17.24507pt too wide) in paragraph at lines 73--75
+Overfull \hbox (17.24507pt too wide) in paragraph at lines 87--89
 []|  [] 
  []
 
+[6 <./figs/Y88.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 92--112
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+ []
 
-[2{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}] [3 <./figs
-/Cs137.pdf>] [4 <./figs/Co60.pdf>] [5 <./figs/Na22.pdf>] [6 <./figs/Y88.pdf>]
-(./main.aux)
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+Overfull \hbox (15.98181pt too wide) in paragraph at lines 92--112
+[] 
+ []
 
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 7B312DE2C01F105BE8C880D123C8A040;408.
+<figs/fig1.pdf, id=148, 462.52798pt x 346.89601pt>
+File: figs/fig1.pdf Graphic file (type pdf)
+<use figs/fig1.pdf>
+Package pdftex.def Info: figs/fig1.pdf  used on input line 117.
+(pdftex.def)             Requested size: 277.51892pt x 208.1392pt.
+[7 <./figs/fig1.pdf>]
+Overfull \hbox (37.85019pt too wide) in paragraph at lines 130--131
+[]$\OT1/cmtt/m/n/12 https : / / userswww . pd . infn . it / []moretto / fontana
+ / project / software /
+ []
+
+[8] (./main.aux)
+
+Package rerunfilecheck Warning: File `main.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `main.out':
+(rerunfilecheck)             Before: E544395B7791647B2A69C26AF207E199;560
+(rerunfilecheck)             After:  220A400160BC7E636FC06E8FE3FC726E;633.
  ) 
 Here is how much of TeX's memory you used:
- 12183 strings out of 477985
- 203784 string characters out of 5840058
- 1859388 words of memory out of 5000000
- 32176 multiletter control sequences out of 15000+600000
- 514901 words of font info for 41 fonts, out of 8000000 for 9000
+ 12253 strings out of 477985
+ 204855 string characters out of 5840058
+ 1862388 words of memory out of 5000000
+ 32229 multiletter control sequences out of 15000+600000
+ 518182 words of font info for 53 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 75i,7n,77p,405b,442s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,8n,77p,405b,440s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-r12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/
-share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texmf-dis
-t/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on main.pdf (6 pages, 350976 bytes).
+texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr
+/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmr5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></us
+r/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmsy5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmtt12.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.p
+fb>
+Output written on main.pdf (8 pages, 527877 bytes).
 PDF statistics:
- 181 PDF objects out of 1000 (max. 8388607)
- 101 compressed objects within 2 object streams
- 19 named destinations out of 1000 (max. 500000)
- 66 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 263 PDF objects out of 1000 (max. 8388607)
+ 164 compressed objects within 2 object streams
+ 24 named destinations out of 1000 (max. 500000)
+ 87 words of extra memory for PDF output out of 10000 (max. 10000000)
 
