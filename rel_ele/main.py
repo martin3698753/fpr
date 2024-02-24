@@ -9,12 +9,11 @@ c = 299792458
 me = 510.998950
 e = 1.602176634*10**(-19)
 
-def plot_line(x, y, c, label):
+def proloz(x, y, c, label):
     x = np.sort(x)
     y = np.sort(y)
-    plt.scatter(x, y, c=c)
-    a = np.polyfit(x, y, 2)
-    plt.plot(x, a[0]*x**2+a[1]*x+a[2], c=c, label=label)
+    a = np.polyfit(x, y, 1)
+    plt.plot(x, a[0]*x+a[1], c=c, label=label)
 
 def edge_theory(emax):
     me = 510.998
@@ -25,6 +24,7 @@ def edge_theory(emax):
 names = ['Cs137', 'Co60', 'Na22', 'Y88']
 def fun2(name):
     edges = np.empty(1)
+    edges_err = np.empty(1)
     pk = np.empty(1)
 
     match name:
@@ -33,31 +33,33 @@ def fun2(name):
             #ax[0].set_xlim([800, 1300])
             #ax[0].xaxis.set_major_locator(ticker.MultipleLocator(100))
             #ax[0].xaxis.set_minor_locator(ticker.MultipleLocator(10))
-            ax[1].set_xlim([900, 1000])
-            ax[1].set_ylim([0, 30])
+            ax[1].set_xlim([940, 1020])
+            ax[1].set_ylim([10, 30])
             ax[1].xaxis.set_major_locator(ticker.MultipleLocator(10))
             ax[1].xaxis.set_minor_locator(ticker.MultipleLocator(2))
-            ax[1].yaxis.set_major_locator(ticker.MultipleLocator(100))
-            ax[1].yaxis.set_minor_locator(ticker.MultipleLocator(10))
-            l = 958
-            r = 962
+            ax[1].yaxis.set_major_locator(ticker.MultipleLocator(10))
+            ax[1].yaxis.set_minor_locator(ticker.MultipleLocator(5))
+            l = 950
+            r = 990
             ax[1].axvline(l)
             ax[1].axvline(r)
             hrana = np.mean([l, r])
             edges[0] = hrana
+            edges_err[0] = np.std([l, r])
 
-            ax[2].set_xlim([1100, 1200])
-            ax[2].set_ylim([0, 30])
-            ax[2].xaxis.set_major_locator(ticker.MultipleLocator(10))
-            ax[2].xaxis.set_minor_locator(ticker.MultipleLocator(2))
-            ax[2].yaxis.set_major_locator(ticker.MultipleLocator(100))
-            ax[2].yaxis.set_minor_locator(ticker.MultipleLocator(10))
-            l = 1114
-            r = 1122
+            ax[2].set_xlim([1100, 1160])
+            ax[2].set_ylim([0, 20])
+            ax[2].xaxis.set_major_locator(ticker.MultipleLocator(15))
+            ax[2].xaxis.set_minor_locator(ticker.MultipleLocator(5))
+            ax[2].yaxis.set_major_locator(ticker.MultipleLocator(10))
+            ax[2].yaxis.set_minor_locator(ticker.MultipleLocator(5))
+            l = 1115
+            r = 1135
             ax[2].axvline(l)
             ax[2].axvline(r)
             hrana = np.mean([l, r])
             edges = np.append(edges, hrana)
+            edges_err = np.append(edges_err, np.std([l, r]))
         case 'Cs137':
             fig, ax = plt.subplots(2, 1)
             ax[0].set_xlim([200, 680])
@@ -68,11 +70,12 @@ def fun2(name):
             ax[1].xaxis.set_major_locator(ticker.MultipleLocator(100))
             ax[1].xaxis.set_minor_locator(ticker.MultipleLocator(10))
             l = 470
-            r = 490
+            r = 500
             plt.axvline(l)
             plt.axvline(r)
             hrana = np.mean([l, r])
             edges[0] = hrana
+            edges_err[0] = np.std([l, r])
 
         case 'Eu152':
             fig, ax = plt.subplots(2, 1)
@@ -95,8 +98,8 @@ def fun2(name):
             #ax[0].set_xlim([200, 600])
             #ax[0].xaxis.set_major_locator(ticker.MultipleLocator(100))
             #ax[0].xaxis.set_minor_locator(ticker.MultipleLocator(10))
-            ax[1].set_ylim([0, 100])
-            ax[1].set_xlim([200, 400])
+            ax[1].set_ylim([0, 50])
+            ax[1].set_xlim([250, 450])
             ax[1].xaxis.set_major_locator(ticker.MultipleLocator(100))
             ax[1].xaxis.set_minor_locator(ticker.MultipleLocator(10))
             l = 330
@@ -105,44 +108,48 @@ def fun2(name):
             ax[1].axvline(r)
             hrana = np.mean([l, r])
             edges[0] = hrana
+            edges_err[0] = np.std([l, r])
 
-            ax[2].set_ylim([0, 10])
-            ax[2].set_xlim([1040, 1090])
+            ax[2].set_ylim([2, 8])
+            ax[2].set_xlim([1050, 1080])
             ax[2].xaxis.set_major_locator(ticker.MultipleLocator(10))
             ax[2].xaxis.set_minor_locator(ticker.MultipleLocator(1))
-            l = 1061
-            r = 1063
+            l = 1055
+            r = 1070
             ax[2].axvline(l)
             ax[2].axvline(r)
             hrana = np.mean([l, r])
             edges = np.append(edges, hrana)
+            edges_err = np.append(edges_err, np.std([l, r]))
         case 'Y88':
             fig, ax = plt.subplots(3, 1)
             ax[0].set_ylim([0, 7000])
-            #ax[0].set_xlim([500, 1600])
-            ax[0].xaxis.set_major_locator(ticker.MultipleLocator(100))
-            ax[0].xaxis.set_minor_locator(ticker.MultipleLocator(10))
-            ax[1].set_ylim([100, 400])
-            ax[1].set_xlim([650, 750])
+            ax[0].set_xlim([400, 1600])
+            #ax[0].xaxis.set_major_locator(ticker.MultipleLocator(100))
+            #ax[0].xaxis.set_minor_locator(ticker.MultipleLocator(10))
+            ax[1].set_ylim([200, 350])
+            ax[1].set_xlim([680, 740])
             ax[1].xaxis.set_major_locator(ticker.MultipleLocator(10))
-            ax[1].xaxis.set_minor_locator(ticker.MultipleLocator(1))
-            l = 695
-            r = 706
+            ax[1].xaxis.set_minor_locator(ticker.MultipleLocator(5))
+            l = 690
+            r = 720
             ax[1].axvline(l)
             ax[1].axvline(r)
             hrana = np.mean([l, r])
             edges[0] = hrana
+            edges_err[0] = np.std([l, r])
 
-            ax[2].set_ylim([70, 160])
+            ax[2].set_ylim([90, 125])
             ax[2].set_xlim([1230, 1250])
             ax[2].xaxis.set_major_locator(ticker.MultipleLocator(10))
             ax[2].xaxis.set_minor_locator(ticker.MultipleLocator(1))
-            l = 1244
+            l = 1243
             r = 1247
             plt.axvline(l)
             plt.axvline(r)
             hrana = np.mean([l, r])
             edges = np.append(edges, hrana)
+            edges_err = np.append(edges_err, np.std([l, r]))
 
 
     fig.tight_layout()
@@ -165,31 +172,38 @@ def fun2(name):
     plt.savefig("figs/" + name + ".pdf")
     plt.clf()
     #plt.show()
-    return(edges)
+    return(edges, edges_err)
 
-edg = np.empty(0, dtype=int)
-for n in names:
-    edg = np.append(edg, fun2(n))
+#edg = np.empty(0, dtype=int)
+#edg_er = np.empty(0, dtype=int)
+#for n in names:
+#    print(fun2(n))
 
-plt.clf()
 nms = ['Cs137', 'Co60', '-', 'Na22', '-', 'Y88', ' -']
 peak_data = np.array([661.666, 1173.3245, 1332.5978, 551.03069, 1274.69751831, 897.96597451, 1460.7852461])
-p = (2*peak_data - edg)/1
-#p = np.sqrt(edg*2*me)
-Tk = p**2/(2*me)
-Tr = np.sqrt(p**2 + me**2) - me
+edg = np.array([485, 970, 1125, 345, 1062.5, 705, 1245])
+edg_er = np.array([15, 20, 10, 15, 7.5, 15, 2])
+p = (2*peak_data - edg)
+##p = np.sqrt(edg*2*me)
+#Tk = p**2/(2*me)
+#Tr = np.sqrt(p**2 + me**2) - me
 df1 = pd.DataFrame(
     {
         "name":nms,
         "peaks":peak_data,
         "edges":edg,
         "momentum":p,
-        "Tk":Tk,
-        "Tr":Tr,
     }
 )
 df1 = df1.round(3)
-df1.to_csv("figs/df1.csv", index=False)
-plot_line(p, Tk, 'blue', 'klasická')
-plot_line(p, Tr, 'red', 'relativistická')
-plt.legend()
+print(df1)
+p = np.sort(p)
+edg = np.sort(edg)
+edg_er = np.sort(edg_er)
+plt.errorbar(p, edg, edg_er, fmt='o', linewidth=2, capsize=6)
+proloz(p, edg, 'blue', 'lxxx')
+plt.show()
+#df1.to_csv("figs/df1.csv", index=False)
+#plot_line(p, Tk, 'blue', 'klasická')
+#plot_line(p, Tr, 'red', 'relativistická')
+#plt.legend()
