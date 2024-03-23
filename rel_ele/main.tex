@@ -48,10 +48,6 @@ Hybnost elektronu pak můžeme určit ze vztahu
 \begin{equation}\label{eq:hyb}
   pc = 2E_{\gamma} - T
 \end{equation}
-Comptnova hrana se určí podle vztahu
-\begin{equation}\label{eq:com}
-  E_{e} = \frac{2E_{\gamma}^{2}}{2E_{\gamma} + m_{e}}
-\end{equation}
 \section{Postup měření}
 Zapnul jsem počítač a program ProSpect.
 Nastavil jsem následné parametry podle návodu.
@@ -62,9 +58,10 @@ Provedl jsem kalibraci.
 Data jsem uložil a opakoval pro další zářiče.
 \newpage
 \section{Data}
-Data jsem plotnul a určil peaky a jejich náležící comptnovy hrany.
-Začátek a konec comptnové hrany je v grafu označen vertikálními čárami.
-Comptnovy hrany jsem určoval pomocí rovnice \ref{eq:com}.
+Data jsem vynesl do grafu a určil peaky a jejich náležící comptnovy hrany.
+Začátek a konec comptnovské hrany je v grafu označená vertikálními čárami.
+První je vždy graf celého spektra a další dva nebo jeden jsou zazoomované sekce,
+aby byly dobře vidět comptnovy hrany.
 \begin{figure}[!h]
   \hspace*{-1em}
   \includegraphics[scale=0.8]{figs/Cs137.pdf}
@@ -96,34 +93,34 @@ Comptnovy hrany jsem určoval pomocí rovnice \ref{eq:com}.
 tabular = |c|c|c|c|c|c|,
 table head =
 \hline
-{prvek}&{$E_{\gamma}$}&{comptnova}&{hybnost}&{$T$}&{$T_{r}$}\\
-{}&{(peaky)}&{hrana}&{eletronu}&{klasická}&{relativistická}\\
+{prvek}&{$E_{\gamma}$}&{comptnova}&{chyba comptnovy}&{hybnost}\\
+{}&{(peaky)}&{hrana}&{hrany}&{eletronu}\\
 \hline
 \hline,
 late after line = \\\hline
 ]{figs/df1.csv}{}{
-  \csvcoli & \csvcolii & \csvcoliii & \csvcoliv & \csvcolv & \csvcolvi}
+  \csvcoli & \csvcolii & \csvcoliii & \csvcoliv & \csvcolv}
 \\
 }
 \vspace{1em}
 \\
 Kde hybnost elektronu jsem spočítal podle vztahu \ref{eq:hyb}.\\
-Klasická $T$ a relativistická $T_{r}$ kinetická energie elektronu jsem určil jako
+Chyba comptnovy hrany je střední odchylka dvou hodnot, a to začátku a konce comptnovy strany z grafu.
+Potom jsem vynesl graf závislosti kinetické energie elektronu na jeho hybnosti.
+Data jsem proložil křivkou klasické $T$ a relativistické $T_{r}$ kinetické energie.
 $$T = \frac{p^{2}}{2m_{e}}$$
 $$T_{r} = \sqrt{ p^{2}c^{2} + m_{0}^{2}c^{4} } - m_{0}c^{2}$$
-Potom jsem plotnul graf závislosti $T(p)$ a $T_{r}(p)$ kde $p$ je hybnost elektronu.
+\newpage
 \begin{figure}[!h]
-  \hspace*{0em}
-  \includegraphics[scale=0.6]{figs/fig1.pdf}
+  \hspace*{-5em}
+  \includegraphics[scale=1]{figs/fig1.pdf}
   \caption{Závislosti $T(p)$ a $T_{r}(p)$}
   \label{gf:tp}
 \end{figure}
 \section{Diskuse}
-Z grafu \ref{gf:tp} je vidět, že klasická křivka je polynom 2. stupně,
-zatímco relativistická křivka je lineární. Podle tabulky je také jasně vidět,
-že se elektrony chovají relativisticky, protože tyto hodnoty jsou mnohem blíže teoritickým i naměřeným hodnotám.
+Z grafu \ref{gf:tp} je vidět, že se naměřená data přibližují relativistické kinetické energii.
 \section{Závěr}
-Elektrony se chovájí relativisticky
+Vytvořil jsem graf závislosti kinetické energie elektronu na jeho hybnosti.
 \section{Zdroje}
 \url{
   https://userswww.pd.infn.it/~moretto/fontana/project/software/2018/03/16/compton-edge.html

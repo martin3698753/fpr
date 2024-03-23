@@ -157,6 +157,10 @@ def fun2(name):
     y = df[" Counts"].values
     x = df[" Energy (keV)"].values
     y = sf(y, 50, 2)
+    #fig.supxlabel("Energie [keV]")
+    #fig.supylabel("počet detekovaných kvant")
+    fig.text(0.5, 0.015, 'Energie [keV]', ha='center', va='center', fontproperties={'weight': 'normal', 'style': 'italic'})
+    fig.text(0.01, 0.5, 'Počet detekovaných kvant', ha='center', va='center', rotation='vertical')
 
     if (name == "Y88"):
         peaks = fp(y, height=2000)
@@ -177,33 +181,38 @@ def fun2(name):
 #edg = np.empty(0, dtype=int)
 #edg_er = np.empty(0, dtype=int)
 #for n in names:
-#    print(fun2(n))
+    #print(fun2(n))
 
 nms = ['Cs137', 'Co60', '-', 'Na22', '-', 'Y88', ' -']
 peak_data = np.array([661.666, 1173.3245, 1332.5978, 551.03069, 1274.69751831, 897.96597451, 1460.7852461])
 edg = np.array([485, 970, 1125, 345, 1062.5, 705, 1245])
+edg_t = np.array
 edg_er = np.array([15, 20, 10, 15, 7.5, 15, 2])
 p = (2*peak_data - edg)
 ##p = np.sqrt(edg*2*me)
-#Tk = p**2/(2*me)
-#Tr = np.sqrt(p**2 + me**2) - me
+Tk = p**2/(2*me)
+Tr = np.sqrt(p**2 + me**2) - me
 df1 = pd.DataFrame(
     {
         "name":nms,
         "peaks":peak_data,
         "edges":edg,
+        "edges_error":edg_er,
         "momentum":p,
     }
 )
 df1 = df1.round(3)
+#df1.to_csv("figs/df1.csv", index=False)
 print(df1)
 p = np.sort(p)
 edg = np.sort(edg)
 edg_er = np.sort(edg_er)
-plt.errorbar(p, edg, edg_er, fmt='o', linewidth=2, capsize=6)
-proloz(p, edg, 'blue', 'lxxx')
-plt.show()
-#df1.to_csv("figs/df1.csv", index=False)
-#plot_line(p, Tk, 'blue', 'klasická')
-#plot_line(p, Tr, 'red', 'relativistická')
-#plt.legend()
+plt.errorbar(p, edg, edg_er, fmt='o', linewidth=2, capsize=6, label="naměřená data")
+#proloz(p, edg, 'blue', 'lxxx')
+proloz(p, Tk, 'green', 'klasická')
+proloz(p, Tr, 'red', 'relativistická')
+plt.xlabel(r"$p [\frac{KeV}{c^2}]$")
+plt.ylabel(r"$T [KeV]$")
+plt.legend()
+#plt.savefig("figs/fig1.pdf")
+#plt.show()
